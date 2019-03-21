@@ -2,6 +2,8 @@
 
 from jinja2 import Environment
 import json
+import pdfkit
+from PyPDF2 import PdfFileWriter, PdfFileReader
 
 
 HTML = """
@@ -28,7 +30,29 @@ def read_json_file():
             print('Website: ' + p['website'])
             print('From: ' + p['from'])
             print('')
+			
+def pdf_from_html():
+    path_wkthmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
+    config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)
+    #pdfkit.from_string('Game', 'out.pdf', configuration=config)
+    pdfkit.from_file('Game.html', 'out.pdf', configuration=config)
+	
+def pdf_mix_it_up():
+    output = PdfFileWriter()
+    input1 = PdfFileReader(open("out.pdf", "rb"))
+    
+    # print how many pages input1 has:
+    print("document1.pdf has %d pages." % input1.getNumPages())
+    output.addPage(input1.getPage(0))
+    output.addPage(input1.getPage(1))
+    output.addPage(input1.getPage(0))
+    
+    # finally, write "output" to document-output.pdf
+    outputStream = open("PyPDF2-output.pdf", "wb")
+    output.write(outputStream)
 
 if __name__ == '__main__':
     print_html_doc()
     read_json_file()
+    pdf_from_html()
+    pdf_mix_it_up()

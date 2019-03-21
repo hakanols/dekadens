@@ -1,0 +1,11 @@
+div.ruta
+{
+  background-color: white;
+  border:5px solid gray;
+  border-radius: 10px;
+  font-family: Noteworthy, Comic Sans MS;
+  width: 150px;
+  height: 200px;
+  display: inline-block;
+  vertical-align: top;
+}

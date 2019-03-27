@@ -1,0 +1,387 @@
+[
+	{
+		"name": "Kön",
+		"cards": [
+			{
+				"title": "Kille",
+				"count": 2,
+				"attribute": [
+					{
+						"title": "Dubbelstandard",
+						"description": "+1a för varje lyckat ligg"
+					},
+					{
+						"title": "Ojämlikhet",
+						"description": "Startar med 2 händelsekort"
+					}
+				]
+			},
+			{
+				"title": "Tjej",
+				"count": 2,
+				"attribute": [
+					{
+						"title": "Multitasking",
+						"description": "Dra ett händelsekort efter lyckat ligg"
+					},
+					{
+						"title": "Smink",
+						"description": "Starta med 4a"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Läggning",
+		"cards": [
+			{
+				"title": "Heterosexuell",
+				"count": 2,
+				"attribute": [
+					{
+						"title": "Melloresistent",
+						"description": "Opåverkad av mello"
+					}
+				]
+			},
+			{
+				"title": "Bisexuell",
+				"count": 2,
+				"attribute": [
+					{
+						"title": "Allätare",
+						"description": "Kan ligga med båda könen"
+					}
+				]
+			},
+			{
+				"title": "Heterosexuell",
+				"count": 2,
+				"attribute": [
+					{
+						"title": "Utmanad",
+						"description": "Det är svårt att hitta lämpliga partners när utbudet är begränsat. Ligg räknas dubbelt"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Händelsekort",
+		"cards": [
+			{
+				"title": "Värsta tv:en",
+				"description": "Du skaffar den fetaste tv:en och alla andra tappar 1a",
+				"count": 1
+			},
+			{
+				"title": "Baktalar",
+				"description": "Du lyckas baktala folk så att du får byta a mellan två motspelare",
+				"count": 1
+			},
+			{
+				"title": "Körkort",
+				"description": "Du skaffar körkort och går plus 2a",
+				"count": 1
+			},
+			{
+				"title": "Symbios",
+				"description": "Du får valet med att ligga med någon motspelare. Glöm ej samtycke. Kom ihåg att bara första ligget räknas.",
+				"count": 1
+			},
+			{
+				"title": "Tveksam släkting",
+				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men du går minus 5 a",
+				"count": 1
+			},
+			{
+				"title": "Kondom",
+				"description": "Utmärk för att förhindra könssjukdomar. Kan lustigt nog appliceras i efterhand",
+				"count": 1
+			},
+			{
+				"title": "Vinballe",
+				"description": "Du lyckas supa en manlig motspelare så pass full att han inte kan ligga de 2 kommande turerna",
+				"count": 1
+			},
+			{
+				"title": "Pava rövin",
+				"description": "En pava rött kan öka din attraktions med 5a temporärt under 1 tur",
+				"count": 1
+			},
+			{
+				"title": "Romantiskmat",
+				"description": "Du lär dig laga mat och går plus 2a",
+				"count": 1
+			},
+			{
+				"title": "Stöka till",
+				"description": "Du stökar till hos en motspelare och denna någon går minus 2a",
+				"count": 1
+			},
+			{
+				"title": "Sängkammarblick",
+				"description": "Du lyckas flörta in dig hos någon av personkorten och förstöra chansen för alla motspelare att ligga med hen",
+				"count": 1
+			},
+			{
+				"title": "Lunarstorm",
+				"description": "Du skaffar Lunarstorm men det är ju några decennier för sent så inget händer",
+				"count": 1
+			},
+			{
+				"title": "Dåligt husdjur",
+				"description": "Du lyckas pracka på en motspelare ett ocharmigt husdjur  och denna tappar 2a",
+				"count": 1
+			},
+			{
+				"title": "Snygg FB bild",
+				"description": "Beskrivning behövs inte +2a",
+				"count": 1
+			},
+			{
+				"title": "Heart of steel",
+				"description": "Använt detta kort för att ta dig ur en förälskelse eller ett förhållande",
+				"count": 1
+			},
+			{
+				"title": "Solsemester",
+				"description": "Du kommer hem solbränd och värdsvan från en semester. +3a",
+				"count": 1
+			},
+			{
+				"title": "Bemästra språk",
+				"description": "Du lyckas lära dig några fraser på ett nytt språk. Tillräckligt för att gå plus 2a",
+				"count": 1
+			},
+			{
+				"title": "Mello",
+				"description": "Mello varar i 2 turer och alla som är bi eller homo är helt utslagna",
+				"count": 1
+			},
+			{
+				"title": "Examen",
+				"description": "Du skaffar en högskoleutbildning som tråkigt nog inte så attraktivt som det borde men det är ju värt nått. +1a",
+				"count": 1
+			},
+			{
+				"title": "En bra jäkla dag",
+				"description": "Du har kort och gott en en bra jäkla dag och har temporärt +5a denna tur",
+				"count": 1
+			},
+			{
+				"title": "Pröjsa könsbyte",
+				"description": "Något ortodoxt men du finansierar valfri personkorts könsbyte. Detta rör nog om i dina motspelares planer",
+				"count": 1
+			},
+			{
+				"title": "",
+				"description": "",
+				"count": 6
+			}
+		]
+	},
+	{
+		"name": "Postligg",
+		"cards": [
+			{
+				"title": "Klamydia",
+				"description": "Om du ligger med någon under de kommande 3 turerna förlorar du 4a",
+				"count": 1
+			},
+			{
+				"title": "Super Klamydia",
+				"description": "Om du ligger med någon under de kommande 4 turerna förlorar du 4a",
+				"count": 1
+			},
+			{
+				"title": "Det här var nytt",
+				"description": "Du vet inte om du gillade det du upplevde  men det var onekligen nytt. Ta en tur och funderar",
+				"count": 1
+			},
+			{
+				"title": "Du fes",
+				"description": "-2a",
+				"count": 1
+			},
+			{
+				"title": "Du var fantastisk",
+				"description": "Ryktes sprider sig fort och snart vill alla ha en bit av kakan +3a",
+				"count": 1
+			},
+			{
+				"title": "Låg med X:et?",
+				"description": "Du var nog för full igår. Hur som helst verkar det som om att du kom hem med ditt X i går natt. Det räknas ju inte som ett nytt ligg.",
+				"count": 1
+			},
+			{
+				"title": "B-kändis",
+				"description": "Nice. Ligget var en b-kändes +2a",
+				"count": 1
+			},
+			{
+				"title": "Trekant",
+				"description": "Typ bästa kortet i hela spelet. Ditt ligg bjöd med en okänd främling och det hela slutade i en trekant. Räknas som 2 ligg.",
+				"count": 1
+			},
+			{
+				"title": "Munherpes",
+				"description": "-4a under 2 turer. Men med tanken på hur alla strular runt har du 1-4 på en D6 att smitta valfria motspelare",
+				"count": 1
+			},
+			{
+				"title": "Förhållande",
+				"description": "Du lyckas befinna dig i ett förhållande. Du kan inte göra några liggförsök de 3 närmaste turerna.",
+				"count": 1
+			},
+			{
+				"title": "Förälskelse",
+				"description": "Vad är det du känner? Bra är det hur som helst inte för detta spelet. Du kan inte göra några liggförsök tills du slagit 1-2 på en D6 i början av din tur",
+				"count": 1
+			},
+			{
+				"title": "Mello",
+				"description": "På något vis låg ni igång Melodifestivalen. Mello varar i 2 turer och alla som är bi eller homo är helt utslagna",
+				"count": 1
+			},
+			{
+				"title": "Läggnings ändring",
+				"description": "Ditt ligg var så jäkla uselt eller bra att du byter läggning. Hetro till bi och bi till hetro",
+				"count": 1
+			},
+			{
+				"title": "Kan inte gå ifrån",
+				"description": "Hens föräldrar kom förbi efter. Det är pinsamt för alla men ingen kan gå därifrån. Stå över ett kast",
+				"count": 1
+			},
+			{
+				"title": "Vilt gick det till",
+				"description": "Tyvärr har du fått skavsår och kan inte göra några liggförsök de 2 kommande omgångarna",
+				"count": 1
+			},
+			{
+				"title": "Katastrof",
+				"description": "Du var så dålig att dit ligg blev asexuell och kommer inte ligga med några fler för resten av spelet",
+				"count": 1
+			},
+			{
+				"title": "Succee",
+				"description": "Du var grym som attan och ryktes sprids. Du får lägga till en ny person från de icke använda personkorten",
+				"count": 1
+			},
+			{
+				"title": "",
+				"description": "",
+				"count": 6
+			}
+		]
+	},
+	{
+		"name": "Person",
+		"template": ["Kön", "Behov av killar", "Behov av tjejer"],
+		"dispCount": true,
+		"cards": [
+			{
+				"title": "Anna",
+				"count": 2,
+				"values": ["Tjej", 4, 16]
+			},
+			{
+				"title": "Eva",
+				"values": ["Tjej", 5, 20],
+				"count": 2
+			},
+			{
+				"title": "Karin",
+				"values": ["Tjej", 8, "-"],
+				"count": 3
+			},
+			{
+				"title": "Ingrid",
+				"values": ["Tjej", 16, "-"],
+				"count": 3
+			},
+			{
+				"title": "Lena",
+				"values": ["Tjej", 8, 8],
+				"count": 2
+			},
+			{
+				"title": "Sofia",
+				"values": ["Tjej", 4, 4],
+				"count": 1
+			},
+			{
+				"title": "Linnéa",
+				"values": ["Tjej", 2, 2],
+				"count": 2
+			},
+			{
+				"title": "Kerstin",
+				"values": ["Tjej", 2, 10],
+				"count": 2
+			},
+			{
+				"title": "Erik",
+				"values": ["Kille", 16, 4],
+				"count": 3
+			},
+			{
+				"title": "Lars",
+				"values": ["Kille", 20, 5],
+				"count": 2
+			},
+			{
+				"title": "Karl",
+				"values": ["Kille", "-", 8],
+				"count": 3
+			},
+			{
+				"title": "Anders",
+				"values": ["Kille", "-", 16],
+				"count": 3
+			},
+			{
+				"title": "Johan",
+				"values": ["Kille", 8, 8],
+				"count": 2
+			},
+			{
+				"title": "Per",
+				"values": ["Kille", 4, 4],
+				"count": 1
+			},
+			{
+				"title": "Nils",
+				"values": ["Kille", 2, 2],
+				"count": 2
+			},
+			{
+				"title": "Jan",
+				"values": ["Kille", 10, 2],
+				"count": 2
+			},
+			{
+				"title": "Kim",
+				"values": ["???", 4, 6],
+				"count": 2
+			},
+			{
+				"title": "Michelle",
+				"values": ["???", 6, 4],
+				"count": 2
+			},
+			{
+				"title": "Alex",
+				"values": ["???", 8, 12],
+				"count": 3
+			},
+			{
+				"title": "Sasha",
+				"values": ["???", 12, 8],
+				"count": 3
+			}
+		]
+	}
+]

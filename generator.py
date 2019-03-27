@@ -6,19 +6,23 @@ import pdfkit
 from PyPDF2 import PdfFileWriter, PdfFileReader
 
 
-HTML = """
+doc = """
 <html>
 <head>
-<title>{{ title }}</title>
+<title>Game</title>
 </head>
-<body>
-Hello.
-</body>
+  <body>
+    {{ body }}
+  </body>
 </html>
 """
 
+div = """
+
+"""
+
 def print_html_doc():
-    page = Environment().from_string(HTML).render(title='Hellow Gist from GutHub')
+    page = Environment().from_string(doc).render(body='Hellow Gist from GutHub')
     with open('gris.html', 'w') as outfile:  
         outfile.write(page)
 	
@@ -30,6 +34,11 @@ def read_json_file():
             print('Website: ' + p['website'])
             print('From: ' + p['from'])
             print('')
+    with open('data.json') as json_file:  
+        data = json.load(json_file)
+        for item in data:
+            print(item)
+
 			
 def pdf_from_html():
     path_wkthmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'

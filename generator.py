@@ -44,7 +44,7 @@ def pdf_from_html():
     path_wkthmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'
     config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)
     #pdfkit.from_string('Game', 'out.pdf', configuration=config)
-    pdfkit.from_file('Game.html', 'out.pdf', configuration=config)
+    pdfkit.from_file('play.html', 'out.pdf', configuration=config)
 	
 def pdf_mix_it_up():
     output = PdfFileWriter()

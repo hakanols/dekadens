@@ -17,8 +17,39 @@ doc = """
 </html>
 """
 
-div = """
+bob = """
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Game</title>
+	<meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+  </head>
+  <body class="main">
+	<div style="text-align:center;">
+		{{ cards }}
+	</div>
+  </body>
+</html>
+"""
 
+back = """
+		<table style="width:100%; height:90%; vertical-align: middle;">
+			<tr>
+				<th><img src='Images/bird1.svg' style="max-width:90%; height: auto;"></th>
+				<th><img src='Images/bird2.svg' style="max-width:90%; height: auto;"></th>
+			</tr>
+			<tr>
+				<td><img src='Images/bird3.svg' style="max-width:90%; height: auto;"></td>
+				<td><img src='Images/bird4.svg' style="max-width:90%; height: auto;"></td>
+			</tr>
+		</table>
+"""
+
+front = """
+		<div class="ruta" style="background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ),url({{image}}); background-repeat:no-repeat; background-position: center; background-size: 90%;">
+			{{title}}
+		</div>
 """
 
 def print_html_doc():
@@ -27,17 +58,16 @@ def print_html_doc():
         outfile.write(page)
 	
 def read_json_file():
-    with open('data.txt') as json_file:  
-        data = json.load(json_file)
-        for p in data['people']:
-            print('Name: ' + p['name'])
-            print('Website: ' + p['website'])
-            print('From: ' + p['from'])
-            print('')
     with open('data.json') as json_file:  
         data = json.load(json_file)
-        for item in data:
-            print(item)
+        #for item in data:
+        #    print(item)
+        print(data[0])
+        bib = Environment().from_string(front).render(image='Images/bird3.svg', title=data[0]['name'])
+        print(bib)
+        page = Environment().from_string(bob).render(cards=bib)
+        with open('gris.html', 'w') as outfile:  
+            outfile.write(page)
 
 			
 def pdf_from_html():
@@ -61,7 +91,7 @@ def pdf_mix_it_up():
     output.write(outputStream)
 
 if __name__ == '__main__':
-    print_html_doc()
+    #print_html_doc()
     read_json_file()
     pdf_from_html()
     pdf_mix_it_up()

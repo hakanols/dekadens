@@ -16,9 +16,9 @@ backTemplate = """
   </head>
   <body class="main">
 	<div style="text-align:center;">
-	{% for cardType in cardTypes %}
-	  {% for card in cardType.cards %}
-	    {%for x in range(card.count)%}
+	{% for cardType in cardTypes -%}
+	  {% for card in cardType.cards -%}
+	    {%for x in range(card.count)-%}
 		  <div class="ruta">
 		    {{ cardType.name }}
 		    <table style="width:100%; height:90%; vertical-align: middle;">
@@ -32,10 +32,10 @@ backTemplate = """
 		      </tr>
 		    </table>
 		  </div>
-		{% endfor %}
-	  {% endfor %}
+		{% endfor -%}
+	  {% endfor -%}
 	  <br>
-	{% endfor %}
+	{% endfor -%}
 	</div>
   </body>
 </html>
@@ -52,30 +52,30 @@ frontTemplate = """
   </head>
   <body class="main">
 	<div style="text-align:center;">
-	{% for cardType in cardTypes %}
-	  {% for card in cardType.cards %}
-	    {%for x in range(card.count)%}
+	{% for cardType in cardTypes -%}
+	  {% for card in cardType.cards -%}
+	    {%for x in range(card.count) -%}
 		  <div class="ruta" style="background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ),url({{image}}); background-repeat:no-repeat; background-position: center; background-size: 90%;">
 		    {{ card.title }}
 			{{ card.description }}
-			{% for attribute in card.attributes %}
+			{% for attribute in card.attributes -%}
 			<br>
 			{{ attribute.title }}
 			{{ attribute.description }}
-			{% endfor %}
+			{% endfor -%}
 			
-			{% if cardType.template %}
-			{%for x in range(cardType.template|length)%}
+			{% if cardType.template -%}
+			{%for x in range(cardType.template|length)-%}
 			<br>
 			{{cardType.template[x]}}
 			{{card['values'][x]}}
-			{% endfor %}
-			{% endif %} 
+			{% endfor -%}
+			{% endif -%} 
 		  </div>
-		{% endfor %}
-	  {% endfor %}
+		{% endfor -%}
+	  {% endfor -%}
 	  <br>
-	{% endfor %}
+	{% endfor -%}
 	</div>
   </body>
 </html>

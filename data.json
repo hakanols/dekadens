@@ -5,7 +5,7 @@
 			{
 				"title": "Kille",
 				"count": 2,
-				"attribute": [
+				"attributes": [
 					{
 						"title": "Dubbelstandard",
 						"description": "+1a för varje lyckat ligg"
@@ -19,7 +19,7 @@
 			{
 				"title": "Tjej",
 				"count": 2,
-				"attribute": [
+				"attributes": [
 					{
 						"title": "Multitasking",
 						"description": "Dra ett händelsekort efter lyckat ligg"
@@ -38,7 +38,7 @@
 			{
 				"title": "Heterosexuell",
 				"count": 2,
-				"attribute": [
+				"attributes": [
 					{
 						"title": "Melloresistent",
 						"description": "Opåverkad av mello"
@@ -48,7 +48,7 @@
 			{
 				"title": "Bisexuell",
 				"count": 2,
-				"attribute": [
+				"attributes": [
 					{
 						"title": "Allätare",
 						"description": "Kan ligga med båda könen"
@@ -58,7 +58,7 @@
 			{
 				"title": "Heterosexuell",
 				"count": 2,
-				"attribute": [
+				"attributes": [
 					{
 						"title": "Utmanad",
 						"description": "Det är svårt att hitta lämpliga partners när utbudet är begränsat. Ligg räknas dubbelt"
@@ -285,7 +285,7 @@
 			{
 				"title": "Anna",
 				"count": 2,
-				"values": ["Tjej", 4, 16]
+				"values": ["Tjej", "4", "16"]
 			},
 			{
 				"title": "Eva",

@@ -39,3 +39,16 @@ p
   margin-top: 0px;
   text-align:left;
 }
+
+div.circle
+{
+	background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border:2px solid black;
+    line-height: 30px;
+    text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}

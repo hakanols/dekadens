@@ -78,7 +78,16 @@ frontTemplate = """
 		  {% endif -%}
 		  {% if cardType.dispCount -%}
 		  <p><b>Ligg per spel:</b> {{card.count}}</p>
-		  {% endif -%} 
+		  {% endif -%}
+	  	  {% if card.turns -%}
+		  <table style="width:100%; text-align: center;">
+		    <tr>
+		      {% for t in range(card.turns) -%}
+			  <th><div class="circle"><span>{{t+1}}</span></div></th>
+			  {% endfor -%}
+		    </tr>
+		  </table>
+		  {% endif -%}
 		</div></div>{% endfor -%}
 	  {% endfor -%}
 	  <br>

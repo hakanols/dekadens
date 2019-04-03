@@ -112,12 +112,14 @@
 			{
 				"title": "Vinballe",
 				"description": "Du lyckas supa en manlig motspelare så pass full att han inte kan ligga de 2 kommande turerna",
-				"count": 1
+				"count": 1,
+				"turns": 2
 			},
 			{
 				"title": "Pava rövin",
 				"description": "En pava rött kan öka din attraktions med 5a temporärt under 1 tur",
-				"count": 1
+				"count": 1,
+				"turns": 1
 			},
 			{
 				"title": "Romantiskmat",
@@ -167,7 +169,8 @@
 			{
 				"title": "Mello",
 				"description": "Mello varar i 2 turer och alla som är bi eller homo är helt utslagna",
-				"count": 1
+				"count": 1,
+				"turns": 2
 			},
 			{
 				"title": "Examen",
@@ -199,17 +202,20 @@
 			{
 				"title": "Klamydia",
 				"description": "Om du ligger med någon under de kommande 3 turerna förlorar du 4a",
-				"count": 1
+				"count": 1,
+				"turns": 3
 			},
 			{
 				"title": "Super Klamydia",
 				"description": "Om du ligger med någon under de kommande 4 turerna förlorar du 4a",
-				"count": 1
+				"count": 1,
+				"turns": 4
 			},
 			{
 				"title": "Det här var nytt",
 				"description": "Du vet inte om du gillade det du upplevde  men det var onekligen nytt. Ta en tur och funderar",
-				"count": 1
+				"count": 1,
+				"turns": 1
 			},
 			{
 				"title": "Du fes",
@@ -239,12 +245,14 @@
 			{
 				"title": "Munherpes",
 				"description": "-4a under 2 turer. Men med tanken på hur alla strular runt har du 1-4 på en D6 att smitta valfria motspelare",
-				"count": 1
+				"count": 1,
+				"turns": 2
 			},
 			{
 				"title": "Förhållande",
 				"description": "Du lyckas befinna dig i ett förhållande. Du kan inte göra några liggförsök de 3 närmaste turerna.",
-				"count": 1
+				"count": 1,
+				"turns": 3
 			},
 			{
 				"title": "Förälskelse",
@@ -254,7 +262,8 @@
 			{
 				"title": "Mello",
 				"description": "På något vis låg ni igång Melodifestivalen. Mello varar i 2 turer och alla som är bi eller homo är helt utslagna",
-				"count": 1
+				"count": 1,
+				"turns": 2
 			},
 			{
 				"title": "Läggnings ändring",
@@ -264,12 +273,14 @@
 			{
 				"title": "Kan inte gå ifrån",
 				"description": "Hens föräldrar kom förbi efter. Det är pinsamt för alla men ingen kan gå därifrån. Stå över ett kast",
-				"count": 1
+				"count": 1,
+				"turns": 1
 			},
 			{
 				"title": "Vilt gick det till",
 				"description": "Tyvärr har du fått skavsår och kan inte göra några liggförsök de 2 kommande omgångarna",
-				"count": 1
+				"count": 1,
+				"turns": 2
 			},
 			{
 				"title": "Katastrof",

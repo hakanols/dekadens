@@ -18,7 +18,7 @@ backTemplate = """
 	<div style="text-align:center;">
 	{% for cardType in cardTypes -%}
 	  {% for card in cardType.cards -%}
-	    {%for x in range(card.count)-%}<div class="ruta">
+		{%for x in range(card.count)-%}<div class="ruta"><div class="inner">
 		  <h4>{{ cardType.name }}</h4>
 		  <table style="width:100%; height:90%; vertical-align: middle;">
 		    {% if cardType.backImages|length == 3 -%}
@@ -40,7 +40,7 @@ backTemplate = """
 		    </tr>
 		    {% endif -%}
 		  </table>
-		</div>{% endfor -%}
+		</div></div>{% endfor -%}
 	  {% endfor -%}
 	  <br>
 	{% endfor -%}
@@ -62,7 +62,7 @@ frontTemplate = """
 	<div style="text-align:center;">
 	{% for cardType in cardTypes -%}
 	  {% for card in cardType.cards -%}
-	    {%for x in range(card.count) -%}<div class="ruta" style="background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ),url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 90%;">
+		{%for x in range(card.count) -%}<div class="ruta" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;"><div class="inner">
 		  <h4>{{ card.title }}</h4>
 		  <p>{{ card.description }}</p>
 		  {% for attribute in card.attributes -%}
@@ -79,7 +79,7 @@ frontTemplate = """
 		  {% if cardType.dispCount -%}
 		  <p><b>Ligg per spel:</b> {{card.count}}</p>
 		  {% endif -%} 
-		</div>{% endfor -%}
+		</div></div>{% endfor -%}
 	  {% endfor -%}
 	  <br>
 	{% endfor -%}

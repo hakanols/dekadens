@@ -75,7 +75,7 @@
 		]
 	},
 	{
-		"name": "Händelsekort",
+		"name": "Händelse",
 		"frontImage": "Images/bird7.svg",
 		"backImages": ["Images/bird7.svg"],
 		"cards": [
@@ -413,6 +413,18 @@
 				"frontImage": "Images/bird5.svg",
 				"values": ["???", 12, 8],
 				"count": 3
+			}
+		]
+	},
+	{
+		"name": "Liggmarkör",
+		"frontImage": "Images/bird9.svg",
+		"backImages": ["Images/bird9.svg"],
+		"cards": [
+			{
+				"title": "Liggmarkör",
+				"description": "Markör som indikerar ett ligg",
+				"count": 12
 			}
 		]
 	}

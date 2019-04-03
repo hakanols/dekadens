@@ -4,8 +4,28 @@ div.ruta
   border:5px solid gray;
   border-radius: 10px;
   font-family: Noteworthy, Comic Sans MS;
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: 280px;
   display: inline-block;
   vertical-align: top;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+h4
+{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+h5
+{
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+p
+{
+  margin-top: 0px;
+  text-align:left;
 }

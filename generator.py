@@ -18,21 +18,29 @@ backTemplate = """
 	<div style="text-align:center;">
 	{% for cardType in cardTypes -%}
 	  {% for card in cardType.cards -%}
-	    {%for x in range(card.count)-%}
-		  <div class="ruta">
-		    {{ cardType.name }}
-		    <table style="width:100%; height:90%; vertical-align: middle;">
-		      <tr>
-		        <th><img src='Images/bird1.svg' style="max-width:90%; height: auto;"></th>
-		        <th><img src='Images/bird2.svg' style="max-width:90%; height: auto;"></th>
-		      </tr>
-		      <tr>
-		        <td><img src='Images/bird3.svg' style="max-width:90%; height: auto;"></td>
-		        <td><img src='Images/bird4.svg' style="max-width:90%; height: auto;"></td>
-		      </tr>
-		    </table>
-		  </div>
-		{% endfor -%}
+	    {%for x in range(card.count)-%}<div class="ruta">
+		  <h4>{{ cardType.name }}</h4>
+		  <table style="width:100%; height:90%; vertical-align: middle;">
+		    {% if cardType.backImages|length == 3 -%}
+		    <tr>
+		      <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+		      <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
+		    </tr>
+		    <tr>
+		      <td colspan = "2"><img src={{cardType.backImages[2]}} style="max-width:45%; height: auto;"></td>
+		    </tr>
+		    {% elif cardType.backImages|length == 2 -%}
+		    <tr>
+		      <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+		      <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
+		    </tr>
+		    {% elif cardType.backImages|length == 1 -%}
+		    <tr>
+		      <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+		    </tr>
+		    {% endif -%}
+		  </table>
+		</div>{% endfor -%}
 	  {% endfor -%}
 	  <br>
 	{% endfor -%}
@@ -54,25 +62,24 @@ frontTemplate = """
 	<div style="text-align:center;">
 	{% for cardType in cardTypes -%}
 	  {% for card in cardType.cards -%}
-	    {%for x in range(card.count) -%}
-		  <div class="ruta" style="background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ),url({{image}}); background-repeat:no-repeat; background-position: center; background-size: 90%;">
-		    {{ card.title }}
-			{{ card.description }}
-			{% for attribute in card.attributes -%}
-			<br>
-			{{ attribute.title }}
-			{{ attribute.description }}
-			{% endfor -%}
-			
-			{% if cardType.template -%}
-			{%for x in range(cardType.template|length)-%}
-			<br>
-			{{cardType.template[x]}}
-			{{card['values'][x]}}
-			{% endfor -%}
-			{% endif -%} 
-		  </div>
-		{% endfor -%}
+	    {%for x in range(card.count) -%}<div class="ruta" style="background-image: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7) ),url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 90%;">
+		  <h4>{{ card.title }}</h4>
+		  <p>{{ card.description }}</p>
+		  {% for attribute in card.attributes -%}
+		  <h5>{{ attribute.title }}</h5>
+		  <p>{{ attribute.description }}</p>
+		  {% endfor -%}
+		  
+		  {% if cardType.template -%}
+		  {%for x in range(cardType.template|length)-%}
+		  
+		  <p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
+		  {% endfor -%}
+		  {% endif -%}
+		  {% if cardType.dispCount -%}
+		  <p><b>Ligg per spel:</b> {{card.count}}</p>
+		  {% endif -%} 
+		</div>{% endfor -%}
 	  {% endfor -%}
 	  <br>
 	{% endfor -%}

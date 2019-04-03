@@ -1,9 +1,11 @@
 [
 	{
 		"name": "Kön",
+		"backImages": ["Images/bird1.svg", "Images/bird2.svg"],
 		"cards": [
 			{
 				"title": "Kille",
+				"frontImage": "Images/bird1.svg",
 				"count": 2,
 				"attributes": [
 					{
@@ -18,6 +20,7 @@
 			},
 			{
 				"title": "Tjej",
+				"frontImage": "Images/bird2.svg",
 				"count": 2,
 				"attributes": [
 					{
@@ -34,9 +37,11 @@
 	},
 	{
 		"name": "Läggning",
+		"backImages": ["Images/bird3.svg", "Images/bird4.svg", "Images/bird6.svg"],
 		"cards": [
 			{
 				"title": "Heterosexuell",
+				"frontImage": "Images/bird3.svg",
 				"count": 2,
 				"attributes": [
 					{
@@ -47,6 +52,7 @@
 			},
 			{
 				"title": "Bisexuell",
+				"frontImage": "Images/bird4.svg",
 				"count": 2,
 				"attributes": [
 					{
@@ -57,6 +63,7 @@
 			},
 			{
 				"title": "Heterosexuell",
+				"frontImage": "Images/bird6.svg",
 				"count": 2,
 				"attributes": [
 					{
@@ -69,6 +76,8 @@
 	},
 	{
 		"name": "Händelsekort",
+		"frontImage": "Images/bird7.svg",
+		"backImages": ["Images/bird7.svg"],
 		"cards": [
 			{
 				"title": "Värsta tv:en",
@@ -184,6 +193,8 @@
 	},
 	{
 		"name": "Postligg",
+		"frontImage": "Images/bird8.svg",
+		"backImages": ["Images/bird8.svg"],
 		"cards": [
 			{
 				"title": "Klamydia",
@@ -279,106 +290,127 @@
 	},
 	{
 		"name": "Person",
+		"backImages": ["Images/bird1.svg", "Images/bird2.svg", "Images/bird5.svg"],
 		"template": ["Kön", "Behov av killar", "Behov av tjejer"],
 		"dispCount": true,
 		"cards": [
 			{
 				"title": "Anna",
+				"frontImage": "Images/bird1.svg",
 				"count": 2,
 				"values": ["Tjej", "4", "16"]
 			},
 			{
 				"title": "Eva",
+				"frontImage": "Images/bird1.svg",
 				"values": ["Tjej", 5, 20],
 				"count": 2
 			},
 			{
 				"title": "Karin",
+				"frontImage": "Images/bird1.svg",
 				"values": ["Tjej", 8, "-"],
 				"count": 3
 			},
 			{
 				"title": "Ingrid",
+				"frontImage": "Images/bird1.svg",
 				"values": ["Tjej", 16, "-"],
 				"count": 3
 			},
 			{
 				"title": "Lena",
+				"frontImage": "Images/bird1.svg",
 				"values": ["Tjej", 8, 8],
 				"count": 2
 			},
 			{
 				"title": "Sofia",
+				"frontImage": "Images/bird1.svg",
 				"values": ["Tjej", 4, 4],
 				"count": 1
 			},
 			{
 				"title": "Linnéa",
+				"frontImage": "Images/bird1.svg",
 				"values": ["Tjej", 2, 2],
 				"count": 2
 			},
 			{
 				"title": "Kerstin",
+				"frontImage": "Images/bird1.svg",
 				"values": ["Tjej", 2, 10],
 				"count": 2
 			},
 			{
 				"title": "Erik",
+				"frontImage": "Images/bird2.svg",
 				"values": ["Kille", 16, 4],
 				"count": 3
 			},
 			{
 				"title": "Lars",
+				"frontImage": "Images/bird2.svg",
 				"values": ["Kille", 20, 5],
 				"count": 2
 			},
 			{
 				"title": "Karl",
+				"frontImage": "Images/bird2.svg",
 				"values": ["Kille", "-", 8],
 				"count": 3
 			},
 			{
 				"title": "Anders",
+				"frontImage": "Images/bird2.svg",
 				"values": ["Kille", "-", 16],
 				"count": 3
 			},
 			{
 				"title": "Johan",
+				"frontImage": "Images/bird2.svg",
 				"values": ["Kille", 8, 8],
 				"count": 2
 			},
 			{
 				"title": "Per",
+				"frontImage": "Images/bird2.svg",
 				"values": ["Kille", 4, 4],
 				"count": 1
 			},
 			{
 				"title": "Nils",
+				"frontImage": "Images/bird2.svg",
 				"values": ["Kille", 2, 2],
 				"count": 2
 			},
 			{
 				"title": "Jan",
+				"frontImage": "Images/bird2.svg",
 				"values": ["Kille", 10, 2],
 				"count": 2
 			},
 			{
 				"title": "Kim",
+				"frontImage": "Images/bird5.svg",
 				"values": ["???", 4, 6],
 				"count": 2
 			},
 			{
 				"title": "Michelle",
+				"frontImage": "Images/bird5.svg",
 				"values": ["???", 6, 4],
 				"count": 2
 			},
 			{
 				"title": "Alex",
+				"frontImage": "Images/bird5.svg",
 				"values": ["???", 8, 12],
 				"count": 3
 			},
 			{
 				"title": "Sasha",
+				"frontImage": "Images/bird5.svg",
 				"values": ["???", 12, 8],
 				"count": 3
 			}

@@ -130,7 +130,7 @@ def pdf_mix_it_up():
 
     if not fronts.getNumPages() == backs.getNumPages():
         raise AssertionError()
-    print("Front and backs take has %d sides eage." % fronts.getNumPages())
+    print("Front and back html documents has %d sides each." % fronts.getNumPages())
 
     for index in range(fronts.getNumPages()):
         output.addPage(fronts.getPage(index))

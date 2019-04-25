@@ -86,7 +86,7 @@
 			},
 			{
 				"title": "Baktalar",
-				"description": "Du lyckas baktala folk så att du får byta a mellan två motspelare",
+				"description": "Du lyckas snacka så kolosalt mycket skit att du får två av dina motspellare att byta a",
 				"count": 1
 			},
 			{
@@ -213,7 +213,7 @@
 			},
 			{
 				"title": "Det här var nytt",
-				"description": "Du vet inte om du gillade det du upplevde  men det var onekligen nytt. Ta en tur och funderar",
+				"description": "Du vet inte om du gillade det du upplevde. Det var onekligen nytt. Ta en tur och funderar",
 				"count": 1,
 				"turns": 1
 			},
@@ -266,11 +266,6 @@
 				"turns": 2
 			},
 			{
-				"title": "Läggnings ändring",
-				"description": "Ditt ligg var så jäkla uselt eller bra att du byter läggning. Hetro till bi och bi till hetro",
-				"count": 1
-			},
-			{
 				"title": "Kan inte gå ifrån",
 				"description": "Hens föräldrar kom förbi efter. Det är pinsamt för alla men ingen kan gå därifrån. Stå över ett kast",
 				"count": 1,
@@ -309,12 +304,12 @@
 				"title": "Anna",
 				"frontImage": "Images/bird1.svg",
 				"count": 2,
-				"values": ["Tjej", "4", "16"]
+				"values": ["Tjej", 4, 12]
 			},
 			{
 				"title": "Eva",
 				"frontImage": "Images/bird1.svg",
-				"values": ["Tjej", 5, 20],
+				"values": ["Tjej", 5, 15],
 				"count": 2
 			},
 			{
@@ -326,7 +321,7 @@
 			{
 				"title": "Ingrid",
 				"frontImage": "Images/bird1.svg",
-				"values": ["Tjej", 16, "-"],
+				"values": ["Tjej", 14, "-"],
 				"count": 3
 			},
 			{
@@ -356,13 +351,13 @@
 			{
 				"title": "Erik",
 				"frontImage": "Images/bird2.svg",
-				"values": ["Kille", 16, 4],
-				"count": 3
+				"values": ["Kille", 12, 4],
+				"count": 2
 			},
 			{
 				"title": "Lars",
 				"frontImage": "Images/bird2.svg",
-				"values": ["Kille", 20, 5],
+				"values": ["Kille", 15, 5],
 				"count": 2
 			},
 			{
@@ -374,7 +369,7 @@
 			{
 				"title": "Anders",
 				"frontImage": "Images/bird2.svg",
-				"values": ["Kille", "-", 16],
+				"values": ["Kille", "-", 14],
 				"count": 3
 			},
 			{

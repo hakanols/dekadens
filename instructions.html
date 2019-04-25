@@ -41,49 +41,49 @@
     <div class="instruction">
       <h2>Spela</h2>
       <ul>
-        <li>Den som slog högst och drog första könskortet i uppsättningen börjar</li>
-        <li>Man kör i turordning som går medurs</li>
-        <li>Under sin tur har man ett val</li>
+        <li>Den som slog högst och med det drog första könskortet i uppsättningen börjar</li>
+        <li>Man kör turvis medurs</li>
+        <li>Under sin tur har man ett val med dessa alternativ:</li>
         <ul>
           <li>Dra ett händelsekort</li>
           <li>Få en attraktions poäng</li>
-          <li>Försöka ligga</li>
+          <li>Försök att ligga med nått av personkorten på bordet</li>
         </ul>
         <li>Den som först kommer till x antal unika ligg vinner.</li>
         <ul>
-          <li>4 personer: 6 ligg</li>
-          <li>3 personer: 8 ligg</li>
-          <li>2 personer: 12 ligg</li>
+          <li>4 spelare: 6 ligg</li>
+          <li>3 spelare: 8 ligg</li>
+          <li>2 spelare: 12 ligg</li>
         </ul>
-        <li>Personkort har ett behövt attraktionsvärde (a) och värde för hur många ligg de ger under ett spel. (Symboliseras av antal kort)</li>
+		<li>Händeleskort kan spelas när som helt under din tur</li>
+        <li>Personkort har ett behövt attraktionsvärde (a) och värde för hur många ligg de ger under ett spel. (Symboliseras även av antal kopior av personkortet)</li>
         <li>Man har a till att lyckas ligga. Ju högre a desto högre chans att ligga</li>
-        <li>För att lyckas ligga räknar man ut sitt Δ (anskaffat a minus behövd a) och använder tabellen nedan</li>
+        <li>För att lyckas ligga räknar man ut sitt delta: Δ = "ditt a" - "behövt a"</li>
+		<li>Använd Δ i tabellen för att se vilka tärningsslag som leder till lyckat ligg</li>
       </ul>
 	  <table>
         <tr>
           <th>Δ</th>
           <th><0</th>
           <th>0</th>
-	  	<th>1</th>
+	  	  <th>1</th>
           <th>2</th>
           <th>3</th>
-	  	<th>4</th>
-          <th>>4</th>
+	  	  <th>>3</th>
         </tr>
         <tr>
-          <th>D6</th>
+          <th>Tärning</th>
           <th>Nan</th>
           <th>1</th>
-	  	<th>1-2</th>
+	  	  <th>1-2</th>
           <th>1-3</th>
           <th>1-4</th>
-	  	<th>1-5</th>
-          <th>1-5*</th>
+	  	  <th>1-5</th>
         </tr>
-	  <caption align="bottom">* Du är för snygg. Du går minus (Δ-4) i attraktionsvärde</caption>
 	  </table>
       <ul>
-        <li>Efter lyckat ligg dras ett postliggkort
+        <li>Efter lyckat ligg tas ett postliggkort</li>
+		<li>Om det ligget var med ett personkort ta en av kopiorna av personkortet som markör. Annars ta ett liggmarkörskort</li>
       </ul>
     </div>
   </body>

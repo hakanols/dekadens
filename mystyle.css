@@ -61,14 +61,14 @@ div.instruction
   padding: 16px;
   box-sizing: border-box;
 }
-table {
+table.dice {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
 }
 
-td, th {
+td.dice, th.dice {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;

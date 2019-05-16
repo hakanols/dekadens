@@ -18,7 +18,7 @@ backTemplate = """
 	<div style="text-align:center;">
 	{% for cardType in cardTypes -%}
 	  {% for card in cardType.cards -%}
-		{%for x in range(card.count)-%}<div class="ruta"><div class="inner">
+		{%for x in range(card.count)-%}<div class="box box-card"><div class="inner inner-card">
 		  <h4>{{ cardType.name }}</h4>
 		  <table style="width:100%; height:90%; vertical-align: middle;">
 		    {% if cardType.backImages|length == 3 -%}
@@ -62,7 +62,7 @@ frontTemplate = """
 	<div style="text-align:center;">
 	{% for cardType in cardTypes -%}
 	  {% for card in cardType.cards -%}
-		{%for x in range(card.count) -%}<div class="ruta" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;"><div class="inner">
+		{%for x in range(card.count) -%}<div class="box box-card" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;"><div class="inner inner-card">
 		  <h4>{{ card.title }}</h4>
 		  <p>{{ card.description }}</p>
 		  {% for attribute in card.attributes -%}

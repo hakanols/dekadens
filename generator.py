@@ -44,6 +44,12 @@ backTemplate = """
 	  {% endfor -%}
 	  <br>
 	{% endfor -%}
+
+	{% for t in range(numerOfCheatSheet) -%} 
+	<div class="box box-sheet"><div class="inner inner-sheet">
+	  <h1>Samtycke</h1>
+    </div></div>
+	{% endfor -%}
 	</div>
   </body>
 </html>
@@ -92,6 +98,44 @@ frontTemplate = """
 	  {% endfor -%}
 	  <br>
 	{% endfor -%}
+	
+	{% for t in range(numerOfCheatSheet) -%} 
+	<div class="box box-sheet"><div class="inner inner-sheet">
+	  <ul>
+        <li>Under sin tur har man ett val med dessa alternativ:</li>
+        <ul>
+          <li>Dra ett händelsekort</li>
+          <li>Få en attraktions poäng</li>
+          <li>Försök att ligga med nått av personkorten på bordet</li>
+        </ul>
+        <li>För att lyckas ligga räknar man ut sitt delta: Δ = "ditt a" - "behövt a"</li>
+		<li>Använd Δ i tabellen för att se vilka tärningsslag som leder till lyckat ligg</li>
+      </ul>
+	  <table class="dice">
+        <tr>
+          <th class="dice">Δ</th>
+          <th class="dice"><0</th>
+          <th class="dice">0</th>
+	  	  <th class="dice">1</th>
+          <th class="dice">2</th>
+          <th class="dice">3</th>
+	  	  <th class="dice">>3</th>
+        </tr>
+        <tr>
+          <th class="dice">Tärning</th>
+          <th class="dice">Nan</th>
+          <th class="dice">1</th>
+	  	  <th class="dice">1-2</th>
+          <th class="dice">1-3</th>
+          <th class="dice">1-4</th>
+	  	  <th class="dice">1-5</th>
+        </tr>
+	  </table>
+	  <ul>
+        <li>Efter lyckat ligg tas ett postliggkort</li>
+      </ul>
+    </div></div>
+	{% endfor -%}
 	</div>
   </body>
 </html>
@@ -102,16 +146,18 @@ def debug(text):
     return ''
 
 def read_json_file():
+    numerOfCheatSheet = 3
+
     with open('data.json') as json_file:  
         data = json.load(json_file)
 
         environment = Environment()
         environment.filters['debug']=debug
-        frontPages = environment.from_string(frontTemplate).render(cardTypes=data)
+        frontPages = environment.from_string(frontTemplate).render(cardTypes=data, numerOfCheatSheet=numerOfCheatSheet)
         with open('fronts.html', 'w', encoding='utf8') as outfile:  
             outfile.write(frontPages)
 		
-        backPages = Environment().from_string(backTemplate).render(cardTypes=data)
+        backPages = Environment().from_string(backTemplate).render(cardTypes=data, numerOfCheatSheet=numerOfCheatSheet)
         with open('backs.html', 'w', encoding='utf8') as outfile:  
             outfile.write(backPages)
 

@@ -107,7 +107,7 @@ def read_json_file():
 
         environment = Environment()
         environment.filters['debug']=debug
-        frontPages = environment.from_string(frontTemplate).render(cardTypes=data, image='Images/bird1.svg')
+        frontPages = environment.from_string(frontTemplate).render(cardTypes=data)
         with open('fronts.html', 'w', encoding='utf8') as outfile:  
             outfile.write(frontPages)
 		

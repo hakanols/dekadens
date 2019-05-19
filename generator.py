@@ -23,38 +23,54 @@ backTemplate = """
 	    <div class="inner inner-card" style="display: table;">
 		  <h4 style="display: table-row;">{{ cardType.name }}</h4>
 		  <div  style="display: table-row; height:100%;">
-		    <table style="height:100%; vertical-align: middle;">
-		    {% if cardType.backImages|length == 3 -%}
-		      <tr>
-		        <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
-		        <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
-		      </tr>
-		      <tr>
-		        <td colspan = "2"><img src={{cardType.backImages[2]}} style="max-width:45%; height: auto;"></td>
-		      </tr>
-		      {% elif cardType.backImages|length == 2 -%}
-		      <tr>
-		        <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
-		        <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
-		      </tr>
-		      {% elif cardType.backImages|length == 1 -%}
-		      <tr>
-		        <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
-		      </tr>
-		      {% endif -%}
-		    </table>
+			<table style="height:100%; vertical-align: middle;">
+			{% if cardType.backImages|length == 3 -%}
+			<tr>
+			  <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+			  <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
+			</tr>
+			<tr>
+			  <td colspan = "2"><img src={{cardType.backImages[2]}} style="max-width:45%; height: auto;"></td>
+			</tr>
+			{% elif cardType.backImages|length == 2 -%}
+			<tr>
+			   <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+			   <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
+			</tr>
+			{% elif cardType.backImages|length == 1 -%}
+			<tr>
+			  <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+			</tr>
+			{% endif -%}
+			</table>
 		  </div>
 		</div>
 	  </div>{% endfor -%}
 	  {% endfor -%}
 	  <br>
-	{% endfor -%}
-
-	{% for t in range(numerOfCheatSheet) -%} 
-	<div class="box box-sheet"><div class="inner inner-sheet">
-	  <h1>Samtycke</h1>
-    </div></div>
-	{% endfor -%}
+	  {% endfor -%}
+	  {% for t in range(numerOfCheatSheet) -%} 
+	  <div class="box box-sheet">
+	    <div class="inner inner-sheet" style="display: table;">
+		  <h1 style="display: table-row;">Samtycke</h1>
+		  <div  style="display: table-row; height:100%;">
+			<table style="height:100%; vertical-align: middle; text-align: center;">
+			  <tr>
+				<th><img src=Images/bird1.svg style="max-width:70%; height: auto;"></th>
+				<th><img src=Images/bird2.svg style="max-width:70%; height: auto;"></th>
+				<th><img src=Images/bird3.svg style="max-width:70%; height: auto;"></th>
+				<th><img src=Images/bird4.svg style="max-width:70%; height: auto;"></th>
+			  </tr>
+			  <tr>
+				<th><img src=Images/bird5.svg style="max-width:70%; height: auto;"></th>
+				<th><img src=Images/bird6.svg style="max-width:70%; height: auto;"></th>
+				<th><img src=Images/bird7.svg style="max-width:70%; height: auto;"></th>
+				<th><img src=Images/bird8.svg style="max-width:70%; height: auto;"></th>
+			  </tr>
+			</table>
+		  </div>
+	    </div>
+	  </div>{% endfor -%}
 	</div>
   </body>
 </html>

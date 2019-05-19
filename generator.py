@@ -17,30 +17,35 @@ backTemplate = """
   <body class="main">
 	<div style="text-align:center;">
 	{% for cardType in cardTypes -%}
-	  {% for card in cardType.cards -%}
-		{%for x in range(card.count)-%}<div class="box box-card"><div class="inner inner-card">
-		  <h4>{{ cardType.name }}</h4>
-		  <table style="width:100%; height:90%; vertical-align: middle;">
+	{% for card in cardType.cards -%}
+	{% for x in range(card.count)-%}
+	  <div class="box box-card">
+	    <div class="inner inner-card" style="display: table;">
+		  <h4 style="display: table-row;">{{ cardType.name }}</h4>
+		  <div  style="display: table-row; height:100%;">
+		    <table style="height:100%; vertical-align: middle;">
 		    {% if cardType.backImages|length == 3 -%}
-		    <tr>
-		      <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
-		      <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
-		    </tr>
-		    <tr>
-		      <td colspan = "2"><img src={{cardType.backImages[2]}} style="max-width:45%; height: auto;"></td>
-		    </tr>
-		    {% elif cardType.backImages|length == 2 -%}
-		    <tr>
-		      <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
-		      <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
-		    </tr>
-		    {% elif cardType.backImages|length == 1 -%}
-		    <tr>
-		      <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
-		    </tr>
-		    {% endif -%}
-		  </table>
-		</div></div>{% endfor -%}
+		      <tr>
+		        <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+		        <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
+		      </tr>
+		      <tr>
+		        <td colspan = "2"><img src={{cardType.backImages[2]}} style="max-width:45%; height: auto;"></td>
+		      </tr>
+		      {% elif cardType.backImages|length == 2 -%}
+		      <tr>
+		        <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+		        <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
+		      </tr>
+		      {% elif cardType.backImages|length == 1 -%}
+		      <tr>
+		        <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+		      </tr>
+		      {% endif -%}
+		    </table>
+		  </div>
+		</div>
+	  </div>{% endfor -%}
 	  {% endfor -%}
 	  <br>
 	{% endfor -%}

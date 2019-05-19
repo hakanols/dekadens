@@ -105,15 +105,14 @@ frontTemplate = """
         <li>Under sin tur har man ett val med dessa alternativ:</li>
         <ul>
           <li>Dra ett händelsekort</li>
-          <li>Få en attraktions poäng</li>
+          <li>Få en <heart/> poäng</li>
           <li>Försök att ligga med nått av personkorten på bordet</li>
         </ul>
-        <li>För att lyckas ligga räknar man ut sitt delta: Δ = "ditt a" - "behövt a"</li>
-		<li>Använd Δ i tabellen för att se vilka tärningsslag som leder till lyckat ligg</li>
+        <li>Ta ditt <heart/> minus personens <flake/> i tabbelen nedan för att se vilka tärningsslag som leder till lyckat ligg</li>
       </ul>
 	  <table class="dice">
         <tr>
-          <th class="dice">Δ</th>
+          <th class="dice"><heart/> - <flake/></th>
           <th class="dice"><0</th>
           <th class="dice">0</th>
 	  	  <th class="dice">1</th>
@@ -123,7 +122,7 @@ frontTemplate = """
         </tr>
         <tr>
           <th class="dice">Tärning</th>
-          <th class="dice">Nan</th>
+          <th class="dice">-</th>
           <th class="dice">1</th>
 	  	  <th class="dice">1-2</th>
           <th class="dice">1-3</th>

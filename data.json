@@ -10,7 +10,7 @@
 				"attributes": [
 					{
 						"title": "Dubbelstandard",
-						"description": "+1a för varje lyckat ligg"
+						"description": "+1<heart/> för varje lyckat ligg"
 					},
 					{
 						"title": "Ojämlikhet",
@@ -29,7 +29,7 @@
 					},
 					{
 						"title": "Smink",
-						"description": "Starta med 4a"
+						"description": "Starta med 4<heart/>"
 					}
 				]
 			}
@@ -81,17 +81,17 @@
 		"cards": [
 			{
 				"title": "Värsta tv:en",
-				"description": "Du skaffar den fetaste tv:en och alla andra tappar 1a",
+				"description": "Du skaffar den fetaste tv:en och alla andra tappar 1<heart/>",
 				"count": 1
 			},
 			{
 				"title": "Baktalar",
-				"description": "Du lyckas snacka så kolosalt mycket skit att du får två av dina motspellare att byta a",
+				"description": "Du lyckas snacka så kolosalt mycket skit att du får två av dina motspellare att byta <heart/>",
 				"count": 1
 			},
 			{
 				"title": "Körkort",
-				"description": "Du skaffar körkort och går plus 2a",
+				"description": "Du skaffar körkort och går plus 2<heart/>",
 				"count": 1
 			},
 			{
@@ -101,7 +101,7 @@
 			},
 			{
 				"title": "Tveksam släkting",
-				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men du går minus 5 a",
+				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men du går minus 5<heart/>",
 				"count": 1
 			},
 			{
@@ -117,18 +117,18 @@
 			},
 			{
 				"title": "Pava rövin",
-				"description": "En pava rött kan öka din attraktions med 5a temporärt under 1 tur",
+				"description": "En pava rött kan öka din attraktions med 5<heart/> temporärt under 1 tur",
 				"count": 1,
 				"turns": 1
 			},
 			{
 				"title": "Romantiskmat",
-				"description": "Du lär dig laga mat och går plus 2a",
+				"description": "Du lär dig laga mat och går plus 2<heart/>",
 				"count": 1
 			},
 			{
 				"title": "Stöka till",
-				"description": "Du stökar till hos en motspelare och denna någon går minus 2a",
+				"description": "Du stökar till hos en motspelare och denna någon går minus 2<heart/>",
 				"count": 1
 			},
 			{
@@ -143,12 +143,12 @@
 			},
 			{
 				"title": "Dåligt husdjur",
-				"description": "Du lyckas pracka på en motspelare ett ocharmigt husdjur  och denna tappar 2a",
+				"description": "Du lyckas pracka på en motspelare ett ocharmigt husdjur och denna tappar 2<heart/>",
 				"count": 1
 			},
 			{
 				"title": "Snygg FB bild",
-				"description": "Beskrivning behövs inte +2a",
+				"description": "Beskrivning behövs inte +2<heart/>",
 				"count": 1
 			},
 			{
@@ -158,12 +158,12 @@
 			},
 			{
 				"title": "Solsemester",
-				"description": "Du kommer hem solbränd och värdsvan från en semester. +3a",
+				"description": "Du kommer hem solbränd och värdsvan från en semester. +3<heart/>",
 				"count": 1
 			},
 			{
 				"title": "Bemästra språk",
-				"description": "Du lyckas lära dig några fraser på ett nytt språk. Tillräckligt för att gå plus 2a",
+				"description": "Du lyckas lära dig några fraser på ett nytt språk. Tillräckligt för att gå plus 2<heart/>",
 				"count": 1
 			},
 			{
@@ -174,12 +174,12 @@
 			},
 			{
 				"title": "Examen",
-				"description": "Du skaffar en högskoleutbildning som tråkigt nog inte så attraktivt som det borde men det är ju värt nått. +1a",
+				"description": "Du skaffar en högskoleutbildning som tråkigt nog inte så attraktivt som det borde men det är ju värt nått. +1<heart/>",
 				"count": 1
 			},
 			{
 				"title": "En bra jäkla dag",
-				"description": "Du har kort och gott en en bra jäkla dag och har temporärt +5a denna tur",
+				"description": "Du har kort och gott en en bra jäkla dag och har temporärt +5<heart/> denna tur",
 				"count": 1
 			},
 			{
@@ -201,13 +201,13 @@
 		"cards": [
 			{
 				"title": "Klamydia",
-				"description": "Om du ligger med någon under de kommande 3 turerna förlorar du 4a",
+				"description": "Om du ligger med någon under de kommande 3 turerna förlorar du 4<heart/>",
 				"count": 1,
 				"turns": 3
 			},
 			{
 				"title": "Super Klamydia",
-				"description": "Om du ligger med någon under de kommande 4 turerna förlorar du 4a",
+				"description": "Om du ligger med någon under de kommande 4 turerna förlorar du 4<heart/>",
 				"count": 1,
 				"turns": 4
 			},
@@ -219,12 +219,12 @@
 			},
 			{
 				"title": "Du fes",
-				"description": "-2a",
+				"description": "-2<heart/>",
 				"count": 1
 			},
 			{
 				"title": "Du var fantastisk",
-				"description": "Ryktes sprider sig fort och snart vill alla ha en bit av kakan +3a",
+				"description": "Ryktes sprider sig fort och snart vill alla ha en bit av kakan +3<heart/>",
 				"count": 1
 			},
 			{
@@ -234,7 +234,7 @@
 			},
 			{
 				"title": "B-kändis",
-				"description": "Nice. Ligget var en b-kändes +2a",
+				"description": "Nice. Ligget var en b-kändes +2<heart/>",
 				"count": 1
 			},
 			{
@@ -244,7 +244,7 @@
 			},
 			{
 				"title": "Munherpes",
-				"description": "-4a under 2 turer. Men med tanken på hur alla strular runt har du 1-4 på en D6 att smitta valfria motspelare",
+				"description": "-4<heart/> under 2 turer. Men med tanken på hur alla strular runt har du 1-4 på en D6 att smitta valfria motspelare",
 				"count": 1,
 				"turns": 2
 			},
@@ -297,7 +297,7 @@
 	{
 		"name": "Person",
 		"backImages": ["Images/bird1.svg", "Images/bird2.svg", "Images/bird5.svg"],
-		"template": ["Kön", "Behov av killar", "Behov av tjejer"],
+		"template": ["Kön", "<flake/> för killar", "<flake/> för tjejer"],
 		"dispCount": true,
 		"cards": [
 			{

@@ -90,3 +90,13 @@ td.dice, th.dice {
   text-align: left;
   padding: 8px;
 }
+
+heart::before {
+  content: "❤";
+  color: red;
+}
+
+flake::before {
+  content: "❄";
+  color: blue;
+}

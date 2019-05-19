@@ -68,33 +68,36 @@ frontTemplate = """
 	<div style="text-align:center;">
 	{% for cardType in cardTypes -%}
 	  {% for card in cardType.cards -%}
-		{%for x in range(card.count) -%}<div class="box box-card" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;"><div class="inner inner-card">
-		  <h4>{{ card.title }}</h4>
-		  <p>{{ card.description }}</p>
-		  {% for attribute in card.attributes -%}
-		  <h5>{{ attribute.title }}</h5>
-		  <p>{{ attribute.description }}</p>
-		  {% endfor -%}
-		  
-		  {% if cardType.template -%}
-		  {%for x in range(cardType.template|length)-%}
-		  
-		  <p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
-		  {% endfor -%}
-		  {% endif -%}
-		  {% if cardType.dispCount -%}
-		  <p><b>Ligg per spel:</b> {{card.count}}</p>
-		  {% endif -%}
-	  	  {% if card.turns -%}
-		  <table style="width:100%; text-align: center;">
-		    <tr>
-		      {% for t in range(card.turns) -%}
-			  <th><div class="circle"><span>{{t+1}}</span></div></th>
-			  {% endfor -%}
-		    </tr>
-		  </table>
-		  {% endif -%}
-		</div></div>{% endfor -%}
+		{%for x in range(card.count) -%}<div class="box box-card">
+		  <img class="image-background" src="{%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}">
+		  <div class="inner inner-card">
+		    <h4>{{ card.title }}</h4>
+		    <p>{{ card.description }}</p>
+		    {% for attribute in card.attributes -%}
+		    <h5>{{ attribute.title }}</h5>
+		    <p>{{ attribute.description }}</p>
+		    {% endfor -%}
+		    
+		    {% if cardType.template -%}
+		    {%for x in range(cardType.template|length)-%}
+		    
+		    <p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
+		    {% endfor -%}
+		    {% endif -%}
+		    {% if cardType.dispCount -%}
+		    <p><b>Ligg per spel:</b> {{card.count}}</p>
+		    {% endif -%}
+	  	    {% if card.turns -%}
+		    <table style="width:100%; text-align: center;">
+		      <tr>
+		        {% for t in range(card.turns) -%}
+			    <th><div class="circle"><span>{{t+1}}</span></div></th>
+			    {% endfor -%}
+		      </tr>
+		    </table>
+		    {% endif -%}
+		    </div>
+		</div>{% endfor -%}
 	  {% endfor -%}
 	  <br>
 	{% endfor -%}

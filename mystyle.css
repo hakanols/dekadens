@@ -11,6 +11,7 @@ div.box
 
 div.box-card
 {
+  position: relative;
   width: 200px;
   height: 280px;
 }
@@ -37,8 +38,8 @@ div.inner
 
 div.inner-card
 {
+  position: static;
   height: 100%;
-  background-color:rgba(255, 255, 255, 0.7);
 }
 
 div.inner-sheet
@@ -100,3 +101,17 @@ flake::before {
   content: "❄";
   color: blue;
 }
+
+img.image-background {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  z-index: -1;
+}
+		  

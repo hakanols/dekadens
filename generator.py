@@ -20,7 +20,7 @@ backTemplate = """
 	{% for card in cardType.cards -%}
 	{% for x in range(card.count)-%}
 	  <div class="box box-card">
-	    <div class="inner inner-card" style="display: table;">
+		<div class="inner inner-card" style="display: table;">
 		  <h4 style="display: table-row;">{{ cardType.name }}</h4>
 		  <div  style="display: table-row; height:100%;">
 			<table style="height:100%; vertical-align: middle;">
@@ -69,7 +69,7 @@ backTemplate = """
 			  <th><img src=Images/bird8.svg style="max-width:70%; height: auto;"></th>
 			</tr>
 		  </table>
-	    </div>
+		</div>
 	  </div>{% endfor -%}
 	</div>
   </body>
@@ -88,8 +88,10 @@ frontTemplate = """
   <body class="main">
 	<div style="text-align:center;">
 	{% for cardType in cardTypes -%}
-	  {% for card in cardType.cards -%}
-		{%for x in range(card.count) -%}<div class="box box-card" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;"><div class="inner inner-card">
+	{% for card in cardType.cards -%}
+	{%for x in range(card.count) -%}
+	  <div class="box box-card" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;">
+		<div class="inner inner-card">
 		  <h4>{{ card.title }}</h4>
 		  <p>{{ card.description }}</p>
 		  {% for attribute in card.attributes -%}
@@ -115,47 +117,48 @@ frontTemplate = """
 		    </tr>
 		  </table>
 		  {% endif -%}
-		</div></div>{% endfor -%}
+		</div>
+	  </div>{% endfor -%}
 	  {% endfor -%}
 	  <br>
-	{% endfor -%}
-	
-	{% for t in range(numerOfCheatSheet) -%} 
-	<div class="box box-sheet"><div class="inner inner-sheet">
-	  <ul>
-        <li>Under din tur välj ett av följande alternativ:</li>
-        <ul>
-          <li>Dra ett händelsekort</li>
-          <li>Gå till gymmet (+1<heart/>)</li>
-          <li>Försök att ligga med en person i staden (ej medspelare)</li>
-        </ul>
-        <li>Ta ditt <heart/> minus personens <flake/> i tabellen nedan för att se vilka tärningsslag som leder till lyckat ligg</li>
-      </ul>
-	  <table class="dice">
-        <tr>
-          <th class="dice"><heart/> - <flake/></th>
-          <th class="dice"><0</th>
-          <th class="dice">0</th>
-	  	  <th class="dice">1</th>
-          <th class="dice">2</th>
-          <th class="dice">3</th>
-	  	  <th class="dice">>3</th>
-        </tr>
-        <tr>
-          <th class="dice">Tärning</th>
-          <th class="dice">-</th>
-          <th class="dice">1</th>
-	  	  <th class="dice">1-2</th>
-          <th class="dice">1-3</th>
-          <th class="dice">1-4</th>
-	  	  <th class="dice">1-5</th>
-        </tr>
-	  </table>
-	  <ul>
-        <li>Efter lyckat ligg tas ett postliggkort</li>
-      </ul>
-    </div></div>
-	{% endfor -%}
+	  {% endfor -%}
+	  {% for t in range(numerOfCheatSheet) -%} 
+	  <div class="box box-sheet">
+		<div class="inner inner-sheet">
+		  <ul>
+		  	<li>Under din tur välj ett av följande alternativ:</li>
+		  	<ul>
+		  	  <li>Dra ett händelsekort</li>
+		  	  <li>Gå till gymmet (+1<heart/>)</li>
+		  	  <li>Försök att ligga med en person i staden (ej medspelare)</li>
+		  	</ul>
+		  	<li>Ta ditt <heart/> minus personens <flake/> i tabellen nedan för att se vilka tärningsslag som leder till lyckat ligg</li>
+		  </ul>
+		  <table class="dice">
+		  	<tr>
+		  	  <th class="dice"><heart/> - <flake/></th>
+		  	  <th class="dice"><0</th>
+		  	  <th class="dice">0</th>
+		  	  <th class="dice">1</th>
+		  	  <th class="dice">2</th>
+		  	  <th class="dice">3</th>
+		  	  <th class="dice">>3</th>
+		  	</tr>
+		  	<tr>
+			  <th class="dice">Tärning</th>
+			  <th class="dice">-</th>
+			  <th class="dice">1</th>
+			  <th class="dice">1-2</th>
+			  <th class="dice">1-3</th>
+			  <th class="dice">1-4</th>
+			  <th class="dice">1-5</th>
+		  	</tr>
+		  </table>
+		  <ul>
+		    <li>Efter lyckat ligg tas ett utfallskort</li>
+		  </ul>
+		</div>
+	  </div>{% endfor -%}
 	</div>
   </body>
 </html>

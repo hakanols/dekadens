@@ -195,7 +195,7 @@
 		]
 	},
 	{
-		"name": "Postligg",
+		"name": "Utfall",
 		"frontImage": "Images/bird8.svg",
 		"backImages": ["Images/bird8.svg"],
 		"cards": [

@@ -28,7 +28,7 @@
 						"description": "Dra ett händelsekort efter lyckat ligg"
 					},
 					{
-						"title": "Smink",
+						"title": "Kvinnlig fägring",
 						"description": "Starta med 4<heart/>"
 					}
 				]
@@ -81,17 +81,17 @@
 		"cards": [
 			{
 				"title": "Värsta tv:en",
-				"description": "Du skaffar den fetaste tv:en och alla andra tappar 1<heart/>",
+				"description": "Du skaffar den fetaste tv:en och alla andra tappar -1<heart/>",
 				"count": 1
 			},
 			{
-				"title": "Baktalar",
-				"description": "Du lyckas snacka så kolosalt mycket skit att du får två av dina motspellare att byta <heart/>",
+				"title": "Baktalaren",
+				"description": "Du lyckas snacka så kolossal mycket skit att du får två av dina motspelare att byta <heart/>",
 				"count": 1
 			},
 			{
 				"title": "Körkort",
-				"description": "Du skaffar körkort och går plus 2<heart/>",
+				"description": "Du skaffar körkort och går plus +2<heart/>",
 				"count": 1
 			},
 			{
@@ -101,7 +101,7 @@
 			},
 			{
 				"title": "Tveksam släkting",
-				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men du går minus 5<heart/>",
+				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men du går -5<heart/>",
 				"count": 1
 			},
 			{
@@ -122,18 +122,18 @@
 				"turns": 1
 			},
 			{
-				"title": "Romantiskmat",
-				"description": "Du lär dig laga mat och går plus 2<heart/>",
+				"title": "Romantisk mat",
+				"description": "Du lär dig laga mat och går plus +2<heart/>",
 				"count": 1
 			},
 			{
 				"title": "Stöka till",
-				"description": "Du stökar till hos en motspelare och denna någon går minus 2<heart/>",
+				"description": "Du stökar till hos en motspelare och denna någon går -2<heart/>",
 				"count": 1
 			},
 			{
 				"title": "Sängkammarblick",
-				"description": "Du lyckas flörta in dig hos någon av personkorten och förstöra chansen för alla motspelare att ligga med hen",
+				"description": "Du lyckas flörta in dig hos någon av personerna i staden och förstöra chansen för alla motspelare att ligga med hen",
 				"count": 1
 			},
 			{
@@ -143,7 +143,7 @@
 			},
 			{
 				"title": "Dåligt husdjur",
-				"description": "Du lyckas pracka på en motspelare ett ocharmigt husdjur och denna tappar 2<heart/>",
+				"description": "Du lyckas pracka på en motspelare ett ocharmigt husdjur och denna tappar -2<heart/>",
 				"count": 1
 			},
 			{
@@ -168,29 +168,24 @@
 			},
 			{
 				"title": "Mello",
-				"description": "Mello varar i 2 turer och alla som är bi eller homo är helt utslagna",
+				"description": "Mello varar i 2 turer och alla som är bi eller homo är helt utslagna och står över två rundor",
 				"count": 1,
 				"turns": 2
 			},
 			{
 				"title": "Examen",
-				"description": "Du skaffar en högskoleutbildning som tråkigt nog inte så attraktivt som det borde men det är ju värt nått. +1<heart/>",
+				"description": "Du skaffar en högskoleutbildning som tråkigt nog inte är så attraktivt som det borde men det är ju värt nått. +1<heart/>",
 				"count": 1
 			},
 			{
 				"title": "En bra jäkla dag",
-				"description": "Du har kort och gott en en bra jäkla dag och har temporärt +5<heart/> denna tur",
-				"count": 1
-			},
-			{
-				"title": "Pröjsa könsbyte",
-				"description": "Något ortodoxt men du finansierar valfri personkorts könsbyte. Detta rör nog om i dina motspelares planer",
+				"description": "Du har kort och gott en bra jäkla dag och har temporärt +5<heart/> denna tur",
 				"count": 1
 			},
 			{
 				"title": "",
 				"description": "",
-				"count": 3
+				"count": 4
 			}
 		]
 	},
@@ -200,14 +195,14 @@
 		"backImages": ["Images/bird8.svg"],
 		"cards": [
 			{
-				"title": "Klamydia",
-				"description": "Om du ligger med någon under de kommande 3 turerna förlorar du 4<heart/>",
+				"title": "Kvaströta",
+				"description": "Om du ligger med någon under de kommande 3 turerna förlorar du -4<heart/>",
 				"count": 1,
 				"turns": 3
 			},
 			{
-				"title": "Super Klamydia",
-				"description": "Om du ligger med någon under de kommande 4 turerna förlorar du 4<heart/>",
+				"title": "Super kvaströta",
+				"description": "Om du ligger med någon under de kommande 4 turerna förlorar du -5<heart/>",
 				"count": 1,
 				"turns": 4
 			},
@@ -244,7 +239,7 @@
 			},
 			{
 				"title": "Munherpes",
-				"description": "-4<heart/> under 2 turer. Men med tanken på hur alla strular runt har du 1-4 på en D6 att smitta valfria motspelare",
+				"description": "-4<heart/> under 2 turer. Men med tanken på hur alla strular runt har du 1-4 på en tärning att smitta valfria motspelare",
 				"count": 1,
 				"turns": 2
 			},
@@ -261,7 +256,7 @@
 			},
 			{
 				"title": "Mello",
-				"description": "På något vis låg ni igång Melodifestivalen. Mello varar i 2 turer och alla som är bi eller homo är helt utslagna",
+				"description": "Ni låg igång Melodifestivalen. Mello varar i 2 turer och alla som är bi eller homo är helt utslagna och står över två slag",
 				"count": 1,
 				"turns": 2
 			},
@@ -279,12 +274,12 @@
 			},
 			{
 				"title": "Katastrof",
-				"description": "Du var så dålig att dit ligg blev asexuell och kommer inte ligga med några fler för resten av spelet",
+				"description": "Du var så dålig att ditt ligg blev asexuell och kommer inte ligga med några fler för resten av spelet",
 				"count": 1
 			},
 			{
-				"title": "Succee",
-				"description": "Du var grym som attan och ryktes sprids. Du får lägga till en ny person från de icke använda personkorten",
+				"title": "Succé",
+				"description": "Du var grym som attan och ryktes sprids. Du får lägga till en ny person till staden från de icke använda personkorten",
 				"count": 1
 			},
 			{

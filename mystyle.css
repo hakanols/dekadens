@@ -47,6 +47,12 @@ div.inner-sheet
   text-align:left;
 }
 
+h2
+{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
 h4
 {
   margin-bottom: 0px;
@@ -83,11 +89,11 @@ table.dice {
   border-collapse: collapse;
   width: 100%;
   table-layout: fixed;
+  text-align: center;
 }
 
 td.dice, th.dice {
-  border: 1px solid #dddddd;
-  text-align: left;
+  border: 2px solid black;
   padding: 8px;
 }
 

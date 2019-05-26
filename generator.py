@@ -24,24 +24,24 @@ backTemplate = """
 		  <h4 style="display: table-row;">{{ cardType.name }}</h4>
 		  <div  style="display: table-row; height:100%;">
 			<table style="height:100%; vertical-align: middle;">
-			{% if cardType.backImages|length == 3 -%}
-			<tr>
-			  <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
-			  <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
-			</tr>
-			<tr>
-			  <td colspan = "2"><img src={{cardType.backImages[2]}} style="max-width:45%; height: auto;"></td>
-			</tr>
-			{% elif cardType.backImages|length == 2 -%}
-			<tr>
-			   <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
-			   <th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
-			</tr>
-			{% elif cardType.backImages|length == 1 -%}
-			<tr>
-			  <th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
-			</tr>
-			{% endif -%}
+			  {% if cardType.backImages|length == 3 -%}
+			  <tr>
+				<th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+				<th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
+			  </tr>
+			  <tr>
+				<td colspan = "2"><img src={{cardType.backImages[2]}} style="max-width:45%; height: auto;"></td>
+			  </tr>
+			  {% elif cardType.backImages|length == 2 -%}
+			  <tr>
+				<th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+				<th><img src={{cardType.backImages[1]}} style="max-width:90%; height: auto;"></th>
+			  </tr>
+			  {% elif cardType.backImages|length == 1 -%}
+			  <tr>
+				<th><img src={{cardType.backImages[0]}} style="max-width:90%; height: auto;"></th>
+			  </tr>
+			  {% endif -%}
 			</table>
 		  </div>
 		</div>
@@ -92,31 +92,49 @@ frontTemplate = """
 	{%for x in range(card.count) -%}
 	  <div class="box box-card" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;">
 		<div class="inner inner-card">
-		  <h4>{{ card.title }}</h4>
-		  <p>{{ card.description }}</p>
-		  {% for attribute in card.attributes -%}
-		  <h5>{{ attribute.title }}</h5>
-		  <p>{{ attribute.description }}</p>
-		  {% endfor -%}
-		  
-		  {% if cardType.template -%}
-		  {%for x in range(cardType.template|length)-%}
-		  
-		  <p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
-		  {% endfor -%}
-		  {% endif -%}
-		  {% if cardType.dispCount -%}
-		  <p><b>Ligg per spel:</b> {{card.count}}</p>
-		  {% endif -%}
-	  	  {% if card.turns -%}
-		  <table style="width:100%; text-align: center;">
-		    <tr>
-		      {% for t in range(card.turns) -%}
-			  <th><div class="circle"><span>{{t+1}}</span></div></th>
-			  {% endfor -%}
-		    </tr>
+		  <table style="width:100%; height: 100%; margin: 0px;">
+		    <tr style="height: 100%; vertical-align: top;">
+			  <td>
+			    <h4>{{ card.title }}</h4>
+			    <p>{{ card.description }}</p>
+			    {% for attribute in card.attributes -%}
+			    <h5>{{ attribute.title }}</h5>
+			    <p>{{ attribute.description }}</p>
+			    {% endfor -%}
+			    {% if cardType.template -%}
+			    {%for x in range(cardType.template|length)-%}
+			    
+			    <p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
+			    {% endfor -%}
+			    {% endif -%}
+			    {% if cardType.dispCount -%}
+			    <p><b>Ligg per spel:</b> {{card.count}}</p>
+			    {% endif -%}
+			    {% if card.turns -%}
+			  </td>
+			</tr>
+			{% if card.turns -%}
+			<tr style="height: 0;">
+			  <td>
+			    <table style="width:100%; text-align: center;">
+			   	 <tr>
+			   	 {% for t in range(card.turns) -%}
+			   	 <th><div class="circle"><span>{{t+1}}</span></div></th>
+			   	 {% endfor -%}
+			   	 </tr>
+			    </table>
+			    {% endif -%}
+			  </td>
+			</tr>
+			{% endif -%}
+			{% if card.summation -%}
+			<tr style="height: 0;">
+			  <td>
+			    <p class="summation">{{card.summation}}</p>
+			  </td>
+			</tr>
+			{% endif -%}
 		  </table>
-		  {% endif -%}
 		</div>
 	  </div>{% endfor -%}
 	  {% endfor -%}

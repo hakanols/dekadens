@@ -1,78 +1,62 @@
-div.box
-{
-  border: 1px solid black;
-  border-radius: 15px;
-  font-family: Noteworthy, Comic Sans MS;
-  display: inline-block;
-  vertical-align: top;
-  padding: 5px;
-  box-sizing: border-box;
+div.box {
+	border: 1px solid black;
+	border-radius: 15px;
+	font-family: Noteworthy, Comic Sans MS;
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+	box-sizing: border-box;
 }
 
-div.box-card
-{
-  width: 200px;
-  height: 280px;
+div.box-card {
+	width: 200px;
+	height: 280px;
 }
 
-div.box-inst
-{
-  width: 100%;
+div.box-inst {
+	width: 100%;
 }
 
-div.box-sheet
-{
-  width: 620px;
-  height: 360px;
+div.box-sheet {
+	width: 620px;
+	height: 360px;
 }
 
-div.inner
-{
-  border: 5px solid gray;
-  border-radius: 10px;
-  padding: 16px;
-  box-sizing: border-box;
-  width: 100%;
+div.inner {
+	border: 5px solid gray;
+	border-radius: 10px;
+	padding: 8px;
+	box-sizing: border-box;
+	width: 100%;
 }
 
-div.inner-card
-{
-  height: 100%;
-  background-color:rgba(255, 255, 255, 0.7);
+div.inner-card {
+	height: 100%;
+	background-color:rgba(255, 255, 255, 0.7);
 }
 
-div.inner-sheet
-{
-  height: 100%;
-  text-align:left;
+div.inner-sheet {
+	height: 100%;
+	text-align:left;
 }
 
-h2
-{
-  margin-bottom: 0px;
-  margin-top: 0px;
+h2, h4 {
+	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
-h4
-{
-  margin-bottom: 0px;
-  margin-top: 0px;
+h5 {
+	margin-bottom: 0px;
+	margin-top: 5px;
 }
 
-h5
-{
-  margin-bottom: 0px;
-  margin-top: 5px;
+p {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	text-align:left;
 }
 
-p
-{
-  margin-top: 0px;
-  text-align:left;
-}
-
-div.circle
-{
+div.circle {
 	background-color: white;
     height: 30px;
     width: 30px;
@@ -85,24 +69,54 @@ div.circle
 }
 
 table.dice {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  table-layout: fixed;
-  text-align: center;
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+	table-layout: fixed;
+	text-align: center;
 }
 
 td.dice, th.dice {
-  border: 2px solid black;
-  padding: 8px;
+	border: 2px solid black;
+	padding: 8px;
+}
+
+p.summation {
+	border:2px;
+	border-style:solid;
+	border-color:black;
+	padding: 0px;
+	text-align: center;
+	font-size: large;
 }
 
 heart::before {
-  content: "❤";
-  color: red;
+	content: "❤";
+	color: red;
 }
 
 flake::before {
-  content: "❄";
-  color: blue;
+	content: "❄";
+	color: blue;
+}
+
+clock::before {
+	content: "⏱";
+	color: black;
+	font-weight: bold;
+}
+
+give::before {
+	content: "👆";
+	color: black;
+}
+
+sex::before {
+	content: "🍆";
+	color: black;
+}
+
+cross::before {
+	content: "❌";
+	color: black;
 }

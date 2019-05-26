@@ -81,8 +81,9 @@
 		"cards": [
 			{
 				"title": "Värsta tv:en",
-				"description": "Du skaffar den fetaste tv:en och alla andra tappar -1<heart/>",
-				"count": 1
+				"description": "Du skaffar den fetaste tv:en och alla andra tappar attraktion",
+				"count": 1,
+				"summation": "<give/> -1<heart/>"
 			},
 			{
 				"title": "Baktalaren",
@@ -91,8 +92,9 @@
 			},
 			{
 				"title": "Körkort",
-				"description": "Du skaffar körkort och går plus +2<heart/>",
-				"count": 1
+				"description": "Du skaffar körkort och blir het som attan",
+				"count": 1,
+				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Symbios",
@@ -101,8 +103,9 @@
 			},
 			{
 				"title": "Tveksam släkting",
-				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men du går -5<heart/>",
-				"count": 1
+				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men ditt rykte blir ytterst skammfilat",
+				"count": 1,
+				"summation": "+1<sex/> -5<heart/>"
 			},
 			{
 				"title": "Kondom",
@@ -113,23 +116,27 @@
 				"title": "Vinballe",
 				"description": "Du lyckas supa en manlig motspelare så pass full att han inte kan ligga de 2 kommande turerna",
 				"count": 1,
-				"turns": 2
+				"turns": 2,
+				"summation": "<give/> <cross/><sex/> 2<clock/>"
 			},
 			{
 				"title": "Pava rövin",
 				"description": "En pava rött kan öka din attraktions med 5<heart/> temporärt under 1 tur",
 				"count": 1,
-				"turns": 1
+				"turns": 1,
+				"summation": "+5<heart/> 1<clock/>"
 			},
 			{
 				"title": "Romantisk mat",
-				"description": "Du lär dig laga mat och går plus +2<heart/>",
-				"count": 1
+				"description": "Du lär dig laga mat och sånt är ju hett",
+				"count": 1,
+				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Stöka till",
-				"description": "Du stökar till hos en motspelare och denna någon går -2<heart/>",
-				"count": 1
+				"description": "Du stökar till hos en motspelare och denna någon tappar delar av sin attraktion",
+				"count": 1,
+				"summation": "<give/> -2<heart/>"
 			},
 			{
 				"title": "Sängkammarblick",
@@ -143,13 +150,15 @@
 			},
 			{
 				"title": "Dåligt husdjur",
-				"description": "Du lyckas pracka på en motspelare ett ocharmigt husdjur och denna tappar -2<heart/>",
-				"count": 1
+				"description": "Du lyckas pracka på en motspelare ett ocharmigt husdjur och denna tappar en del av sin attraktion",
+				"count": 1,
+				"summation": "<give/> -2<heart/>"
 			},
 			{
 				"title": "Snygg FB bild",
-				"description": "Beskrivning behövs inte +2<heart/>",
-				"count": 1
+				"description": "Beskrivning behövs inte",
+				"count": 1,
+				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Heart of steel",
@@ -158,13 +167,15 @@
 			},
 			{
 				"title": "Solsemester",
-				"description": "Du kommer hem solbränd och värdsvan från en semester. +3<heart/>",
-				"count": 1
+				"description": "Du kommer hem solbränd och värdsvan från en semester.",
+				"count": 1,
+				"summation": "+3<heart/>"
 			},
 			{
 				"title": "Bemästra språk",
-				"description": "Du lyckas lära dig några fraser på ett nytt språk. Tillräckligt för att gå plus 2<heart/>",
-				"count": 1
+				"description": "Du lyckas lära dig några fraser på ett nytt språk. Tillräckligt för att imponera på folk",
+				"count": 1,
+				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Mello",
@@ -174,13 +185,15 @@
 			},
 			{
 				"title": "Examen",
-				"description": "Du skaffar en högskoleutbildning som tråkigt nog inte är så attraktivt som det borde men det är ju värt nått. +1<heart/>",
-				"count": 1
+				"description": "Du skaffar en högskoleutbildning som tråkigt nog inte är så attraktivt som det borde men det är ju värt nått.",
+				"count": 1,
+				"summation": "+1<heart/>"
 			},
 			{
 				"title": "En bra jäkla dag",
-				"description": "Du har kort och gott en bra jäkla dag och har temporärt +5<heart/> denna tur",
-				"count": 1
+				"description": "Du har kort och gott en bra jäkla dag.",
+				"count": 1,
+				"summation": "+5<heart/> 1<clock/>"
 			},
 			{
 				"title": "",

@@ -18,8 +18,8 @@ div.box-inst {
 }
 
 div.box-sheet {
-	width: 620px;
-	height: 360px;
+	width: 560px;
+	height: 340px;
 }
 
 div.inner {
@@ -101,22 +101,21 @@ flake::before {
 }
 
 clock::before {
-	content: "⏱";
+	content: "⌛";
 	color: black;
-	font-weight: bold;
 }
 
 give::before {
-	content: "👆";
+	content: "☛";
 	color: black;
 }
 
 sex::before {
-	content: "🍆";
+	content: "♋";
 	color: black;
 }
 
 cross::before {
-	content: "❌";
-	color: black;
+	content: "✖";
+	color: red;
 }

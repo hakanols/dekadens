@@ -208,13 +208,13 @@
 		"backImages": ["Images/bird8.svg"],
 		"cards": [
 			{
-				"title": "Kvaströta",
+				"title": "Blue waffle",
 				"description": "Om du ligger med någon under de kommande 3 turerna förlorar du -4<heart/>",
 				"count": 1,
 				"turns": 3
 			},
 			{
-				"title": "Super kvaströta",
+				"title": "Kvaströta",
 				"description": "Om du ligger med någon under de kommande 4 turerna förlorar du -5<heart/>",
 				"count": 1,
 				"turns": 4
@@ -223,32 +223,38 @@
 				"title": "Det här var nytt",
 				"description": "Du vet inte om du gillade det du upplevde. Det var onekligen nytt. Ta en tur och funderar",
 				"count": 1,
-				"turns": 1
+				"turns": 1,
+				"summation": "1<clock/>"
 			},
 			{
 				"title": "Du fes",
-				"description": "-2<heart/>",
-				"count": 1
+				"description": "",
+				"count": 1,
+				"summation": "-2<heart/>"
 			},
 			{
 				"title": "Du var fantastisk",
-				"description": "Ryktes sprider sig fort och snart vill alla ha en bit av kakan +3<heart/>",
-				"count": 1
+				"description": "Ryktes sprider sig fort och snart vill alla ha en bit av kakan",
+				"count": 1,
+				"summation": "+3<heart/>"
 			},
 			{
 				"title": "Låg med X:et?",
 				"description": "Du var nog för full igår. Hur som helst verkar det som om att du kom hem med ditt X i går natt. Det räknas ju inte som ett nytt ligg.",
-				"count": 1
+				"count": 1,
+				"summation": "-1<sex/>"
 			},
 			{
 				"title": "B-kändis",
-				"description": "Nice. Ligget var en b-kändes +2<heart/>",
-				"count": 1
+				"description": "Nice. Ligget var en b-kändis",
+				"count": 1,
+				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Trekant",
 				"description": "Typ bästa kortet i hela spelet. Ditt ligg bjöd med en okänd främling och det hela slutade i en trekant. Räknas som 2 ligg.",
-				"count": 1
+				"count": 1,
+				"summation": "+1<sex/>"
 			},
 			{
 				"title": "Munherpes",
@@ -260,34 +266,38 @@
 				"title": "Förhållande",
 				"description": "Du lyckas befinna dig i ett förhållande. Du kan inte göra några liggförsök de 3 närmaste turerna.",
 				"count": 1,
-				"turns": 3
+				"turns": 3,
+				"summation": "<cross/><sex/>3<clock/>"
 			},
 			{
 				"title": "Förälskelse",
-				"description": "Vad är det du känner? Bra är det hur som helst inte för detta spelet. Du kan inte göra några liggförsök tills du slagit 1-2 på en D6 i början av din tur",
-				"count": 1
+				"description": "Du känner nått som inte är bra för detta spel. Du kan ej göra några liggförsök tills du slagit 1-2 på en tärning i början av din tur.",
+				"count": 1,
+				"summation": "<cross/><sex/>"
 			},
 			{
 				"title": "Mello",
-				"description": "Ni låg igång Melodifestivalen. Mello varar i 2 turer och alla som är bi eller homo är helt utslagna och står över två slag",
+				"description": "Ni låg igång Melodifestivalen. Mello varar i 2 turer och alla som är bi eller homo är helt utslagna och står över två slag.",
 				"count": 1,
 				"turns": 2
 			},
 			{
 				"title": "Kan inte gå ifrån",
-				"description": "Hens föräldrar kom förbi efter. Det är pinsamt för alla men ingen kan gå därifrån. Stå över ett kast",
+				"description": "Hens föräldrar kom förbi efter. Det är pinsamt för alla men ingen kan gå därifrån. Stå över ett kast.",
 				"count": 1,
-				"turns": 1
+				"turns": 1,
+				"summation": "1<clock/>"
 			},
 			{
 				"title": "Vilt gick det till",
-				"description": "Tyvärr har du fått skavsår och kan inte göra några liggförsök de 2 kommande omgångarna",
+				"description": "Tyvärr har du fått skavsår och kan inte göra några liggförsök de 2 kommande omgångarna.",
 				"count": 1,
-				"turns": 2
+				"turns": 2,
+				"summation": "<cross/><sex/>2<clock/>"
 			},
 			{
 				"title": "Katastrof",
-				"description": "Du var så dålig att ditt ligg blev asexuell och kommer inte ligga med några fler för resten av spelet",
+				"description": "Du var så dålig att ditt ligg blev asexuell och kommer inte ligga med några fler för resten av spelet.",
 				"count": 1
 			},
 			{

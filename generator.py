@@ -102,9 +102,9 @@ frontTemplate = """
 			    <p>{{ attribute.description }}</p>
 			    {% endfor -%}
 			    {% if cardType.template -%}
+				<br>
 			    {%for x in range(cardType.template|length)-%}
-			    
-			    <p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
+			    <p style="padding-bottom: 20px;"><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
 			    {% endfor -%}
 			    {% endif -%}
 			    {% if cardType.dispCount -%}

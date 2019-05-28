@@ -32,11 +32,12 @@ frontTemplate = """
 			    {% if cardType.template -%}
 				<br>
 			    {%for x in range(cardType.template|length)-%}
-			    <p style="padding-bottom: 20px;"><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
+			    <p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
+				<br>
 			    {% endfor -%}
 			    {% endif -%}
-			    {% if cardType.dispCount -%}
-			    <p><b>Ligg per spel:</b> {{card.count}}</p>
+			    {% if cardType.countText -%}
+			    <p><b>{{ cardType.countText }}</b> {{card.count}}</p>
 			    {% endif -%}
 			  </td>
 			</tr>
@@ -56,7 +57,7 @@ frontTemplate = """
 			{% if card.summation -%}
 			<tr style="height: 0;">
 			  <td>
-			    <p class="summation">{{card.summation}}</p>
+			    <p class="summation">{{ card.summation }}</p>
 			  </td>
 			</tr>
 			{% endif -%}
@@ -66,7 +67,7 @@ frontTemplate = """
 	  {% endfor -%}
 	  <br>
 	  {% endfor -%}
-	  {% for t in range(numerOfCheatSheet) -%}{{cheatSheet}}{% endfor -%}
+	  {% for t in range(numerOfCheatSheet) -%}{{ cheatSheet }}{% endfor -%}
 	</div>
   </body>
 </html>

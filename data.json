@@ -316,7 +316,7 @@
 		"name": "Person",
 		"backImages": ["Images/bird1.svg", "Images/bird2.svg", "Images/bird5.svg"],
 		"template": ["Kön", "<flake/> för killar", "<flake/> för tjejer"],
-		"dispCount": true,
+		"countText": "Ligg per spel:",
 		"cards": [
 			{
 				"title": "Anna",

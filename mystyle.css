@@ -61,7 +61,9 @@ div.circle {
     height: 30px;
     width: 30px;
     border-radius: 50%;
-    border:2px solid black;
+    border:2px;
+	border-style:solid;
+	border-color: black;
     line-height: 30px;
     text-align: center;
 	margin-left: auto;
@@ -82,9 +84,10 @@ td.dice, th.dice {
 }
 
 p.summation {
-	border:2px;
+	border: 2px;
 	border-style:solid;
-	border-color:black;
+	border-radius: 7px;
+	border-color: gray;
 	padding: 0px;
 	text-align: center;
 	font-size: large;

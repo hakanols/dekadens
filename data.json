@@ -114,14 +114,14 @@
 			},
 			{
 				"title": "Vinballe",
-				"description": "Du lyckas supa en manlig motspelare så pass full att han inte kan ligga de 2 kommande turerna",
+				"description": "Du lyckas supa en motspelare så pass full att hen inte kan ligga de 2 kommande turerna",
 				"count": 1,
 				"turns": 2,
 				"summation": "<give/> <cross/><sex/> 2<clock/>"
 			},
 			{
 				"title": "Pava rövin",
-				"description": "En pava rött kan öka din attraktions med 5<heart/> temporärt under 1 tur",
+				"description": "En pava rött kan öka din attraktion med 5<heart/> temporärt under 1 tur",
 				"count": 1,
 				"turns": 1,
 				"summation": "+5<heart/> 1<clock/>"
@@ -234,7 +234,7 @@
 			},
 			{
 				"title": "Du var fantastisk",
-				"description": "Ryktes sprider sig fort och snart vill alla ha en bit av kakan",
+				"description": "Ryktet sprider sig fort och snart vill alla ha en bit av kakan.",
 				"count": 1,
 				"summation": "+3<heart/>"
 			},
@@ -246,7 +246,7 @@
 			},
 			{
 				"title": "B-kändis",
-				"description": "Nice. Ligget var en b-kändis",
+				"description": "Nice. Ligget var en b-kändis.",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},

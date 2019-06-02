@@ -206,6 +206,7 @@ def pdf_from_html():
     config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)
     pdfkit.from_file('fronts.html', 'fronts.pdf', configuration=config)
     pdfkit.from_file('backs.html', 'backs.pdf', configuration=config)
+    pdfkit.from_file('instructions.html', 'instructions.pdf', configuration=config)
 	
 def pdf_mix_it_up():
     output = PdfFileWriter()
@@ -221,7 +222,7 @@ def pdf_mix_it_up():
         output.addPage(fronts.getPage(index))
         output.addPage(backs.getPage(index))
 
-    outputStream = open("frontsAndBacks.pdf", "wb")
+    outputStream = open("cards.pdf", "wb")
     output.write(outputStream)
 
 if __name__ == '__main__':

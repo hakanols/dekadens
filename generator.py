@@ -9,9 +9,9 @@ frontTemplate = """
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Game</title>
+	<title>Game</title>
 	<meta charset="UTF-8" />
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
   </head>
   <body class="main">
 	<div style="text-align:center;">
@@ -21,43 +21,43 @@ frontTemplate = """
 	  <div class="box box-card" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;">
 		<div class="inner inner-card">
 		  <table style="width:100%; height: 100%; margin: 0px;">
-		    <tr style="height: 100%; vertical-align: top;">
+			<tr style="height: 100%; vertical-align: top;">
 			  <td>
-			    <h4>{{ card.title }}</h4>
-			    <p>{{ card.description }}</p>
-			    {% for attribute in card.attributes -%}
-			    <h5>{{ attribute.title }}</h5>
-			    <p>{{ attribute.description }}</p>
-			    {% endfor -%}
-			    {% if cardType.template -%}
+				<h4>{{ card.title }}</h4>
+				<p>{{ card.description }}</p>
+				{% for attribute in card.attributes -%}
+				<h5>{{ attribute.title }}</h5>
+				<p>{{ attribute.description }}</p>
+				{% endfor -%}
+				{% if cardType.template -%}
 				<br>
-			    {%for x in range(cardType.template|length)-%}
-			    <p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
+				{%for x in range(cardType.template|length)-%}
+				<p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
 				<br>
-			    {% endfor -%}
-			    {% endif -%}
-			    {% if cardType.countText -%}
-			    <p><b>{{ cardType.countText }}</b> {{card.count}}</p>
-			    {% endif -%}
+				{% endfor -%}
+				{% endif -%}
+				{% if cardType.countText -%}
+				<p><b>{{ cardType.countText }}</b> {{card.count}}</p>
+				{% endif -%}
 			  </td>
 			</tr>
 			{% if card.turns -%}
 			<tr style="height: 0;">
 			  <td>
-			    <table style="width:100%; text-align: center;">
-			   	  <tr>
-			   	    {% for t in range(card.turns) -%}
-			   	    <td><div class="circle"><span>{{t+1}}</span></div></td>
-			   	    {% endfor -%}
-			   	  </tr>
-			    </table>
+				<table style="width:100%; text-align: center;">
+				<tr>
+				  {% for t in range(card.turns) -%}
+				  <td><div class="circle"><span>{{t+1}}</span></div></td>
+				  {% endfor -%}
+				</tr>
+				</table>
 			  </td>
 			</tr>
 			{% endif -%}
 			{% if card.summation -%}
 			<tr style="height: 0;">
 			  <td>
-			    <p class="summation">{{ card.summation }}</p>
+				<p class="summation">{{ card.summation }}</p>
 			  </td>
 			</tr>
 			{% endif -%}
@@ -125,23 +125,23 @@ backTemplate = """
 cheatSheetFront = """<div class="box box-sheet">
 		<div class="inner inner-sheet">
 		  <ul>
-		  	<li>Under din tur välj ett av följande alternativ:</li>
-		  	<ul>
-		  	  <li>Dra ett händelsekort</li>
-		  	  <li>Gå till gymmet (+1<heart/>)</li>
-		  	  <li>Försök att ligga med en person i staden (ej medspelare)</li>
-		  	</ul>
-		  	<li>Ta ditt <heart/> minus personens <flake/> i tabellen nedan för att se vilka tärningsslag som leder till lyckat ligg</li>
+			<li>Under din tur välj ett av följande alternativ:</li>
+			<ul>
+			  <li>Dra ett händelsekort</li>
+			  <li>Gå till gymmet (+1<heart/>)</li>
+			  <li>Försök att ligga med en person i staden (ej medspelare)</li>
+			</ul>
+			<li>Ta ditt <heart/> minus personens <flake/> i tabellen nedan för att se vilka tärningsslag som leder till lyckat ligg</li>
 		  </ul>
 		  <table class="dice">
-		  	<tr>
-		  	  <th class="dice"><heart/> - <flake/></th>
-		  	  <th class="dice"><0</th>
-		  	  <th class="dice">0</th>
-		  	  <th class="dice">1</th>
-		  	  <th class="dice">2</th>
-		  	  <th class="dice">3</th>
-		  	  <th class="dice">>3</th>
+			<tr>
+			  <th class="dice"><heart/> - <flake/></th>
+			  <th class="dice"><0</th>
+			  <th class="dice">0</th>
+			  <th class="dice">1</th>
+			  <th class="dice">2</th>
+			  <th class="dice">3</th>
+			  <th class="dice">>3</th>
 		  	</tr>
 		  	<tr>
 			  <th class="dice">Tärning</th>
@@ -196,7 +196,7 @@ def read_json_file():
         frontPages = environment.from_string(frontTemplate).render(cardTypes=data, cheatSheet=cheatSheetFront, numerOfCheatSheet=numerOfCheatSheet)
         with open('fronts.html', 'w', encoding='utf8') as outfile:  
             outfile.write(frontPages)
-		
+
         backPages = Environment().from_string(backTemplate).render(cardTypes=data, cheatSheet=cheatSheetBack, numerOfCheatSheet=numerOfCheatSheet)
         with open('backs.html', 'w', encoding='utf8') as outfile:  
             outfile.write(backPages)
@@ -206,20 +206,12 @@ def pdf_from_html():
     config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)
     pdfkit.from_file('fronts.html', 'fronts.pdf', configuration=config)
     pdfkit.from_file('backs.html', 'backs.pdf', configuration=config)
-	
-    options = {
-        'margin-top': '12.7mm',
-        'margin-right': '12.7mm',
-        'margin-bottom': '12.7mm',
-        'margin-left': '12.7mm'
-    }
-    pdfkit.from_file('instructions.html', 'instructions.pdf', configuration=config, options=options)
-	
+    pdfkit.from_file('instructions.html', 'instructions.pdf', configuration=config)
+
 def pdf_mix_it_up():
     output = PdfFileWriter()
     fronts = PdfFileReader(open("fronts.pdf", "rb"))
     backs = PdfFileReader(open("backs.pdf", "rb"))
-    
 
     if not fronts.getNumPages() == backs.getNumPages():
         raise AssertionError()

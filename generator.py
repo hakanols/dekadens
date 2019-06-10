@@ -1,9 +1,10 @@
 #!/usr/bin/env/python
 
 from jinja2 import Environment
+from PyPDF2 import PdfFileWriter, PdfFileReader
 import json
 import pdfkit
-from PyPDF2 import PdfFileWriter, PdfFileReader
+import cheatSheet
 
 frontTemplate = """
 <!DOCTYPE html>
@@ -122,65 +123,6 @@ backTemplate = """
 </html>
 """
 
-cheatSheetFront = """<div class="box box-sheet">
-		<div class="inner inner-sheet">
-		  <ul>
-			<li>Under din tur välj ett av följande alternativ:</li>
-			<ul>
-			  <li>Dra ett händelsekort</li>
-			  <li>Gå till gymmet (+1<heart/>)</li>
-			  <li>Försök att ligga med en person i staden (ej medspelare)</li>
-			</ul>
-			<li>Ta ditt <heart/> minus personens <flake/> i tabellen nedan för att se vilka tärningsslag som leder till lyckat ligg</li>
-		  </ul>
-		  <table class="dice">
-			<tr>
-			  <th class="dice"><heart/> - <flake/></th>
-			  <th class="dice"><0</th>
-			  <th class="dice">0</th>
-			  <th class="dice">1</th>
-			  <th class="dice">2</th>
-			  <th class="dice">3</th>
-			  <th class="dice">>3</th>
-		  	</tr>
-		  	<tr>
-			  <th class="dice">Tärning</th>
-			  <th class="dice">-</th>
-			  <th class="dice">1</th>
-			  <th class="dice">1-2</th>
-			  <th class="dice">1-3</th>
-			  <th class="dice">1-4</th>
-			  <th class="dice">1-5</th>
-		  	</tr>
-		  </table>
-		  <ul>
-		    <li>Efter lyckat ligg tas ett utfallskort</li>
-		  </ul>
-		</div>
-	  </div>"""
-
-cheatSheetBack = """<div class="box box-sheet">
-	    <div class="inner inner-sheet"">
-		  <table style="height:100%; vertical-align: middle; text-align: center;">
-			<tr>
-			  <th><img src=Images/bird1.svg style="max-width:70%; height: auto;"></th>
-			  <th><img src=Images/bird2.svg style="max-width:70%; height: auto;"></th>
-			  <th><img src=Images/bird3.svg style="max-width:70%; height: auto;"></th>
-			  <th><img src=Images/bird4.svg style="max-width:70%; height: auto;"></th>
-			</tr>
-			<tr>
-			  <td colspan = "4"><h1 style="margin: 0;">Samtycke</h1></td>
-			</tr>
-			<tr>
-			  <th><img src=Images/bird5.svg style="max-width:70%; height: auto;"></th>
-			  <th><img src=Images/bird6.svg style="max-width:70%; height: auto;"></th>
-			  <th><img src=Images/bird7.svg style="max-width:70%; height: auto;"></th>
-			  <th><img src=Images/bird8.svg style="max-width:70%; height: auto;"></th>
-			</tr>
-		  </table>
-		</div>
-	  </div>"""
-
 def debug(text):
     print(text)
     return ''
@@ -193,11 +135,11 @@ def read_json_file():
 
         environment = Environment()
         environment.filters['debug']=debug
-        frontPages = environment.from_string(frontTemplate).render(cardTypes=data, cheatSheet=cheatSheetFront, numerOfCheatSheet=numerOfCheatSheet)
+        frontPages = environment.from_string(frontTemplate).render(cardTypes=data, cheatSheet=cheatSheet.cheatSheetFront, numerOfCheatSheet=numerOfCheatSheet)
         with open('fronts.html', 'w', encoding='utf8') as outfile:  
             outfile.write(frontPages)
 
-        backPages = Environment().from_string(backTemplate).render(cardTypes=data, cheatSheet=cheatSheetBack, numerOfCheatSheet=numerOfCheatSheet)
+        backPages = Environment().from_string(backTemplate).render(cardTypes=data, cheatSheet=cheatSheet.cheatSheetBack, numerOfCheatSheet=numerOfCheatSheet)
         with open('backs.html', 'w', encoding='utf8') as outfile:  
             outfile.write(backPages)
 

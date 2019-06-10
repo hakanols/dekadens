@@ -5,3 +5,4 @@
 /frontsAndBacks.pdf
 /cards.pdf
 /instructions.pdf
+/__pycache__/*.pyc

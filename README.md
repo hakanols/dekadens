@@ -18,5 +18,19 @@ andra språk borde vara lätt. Finns bara på svenska för tillfället.
 * Skaffa fram några tändstickor eller andra markörer
 * Sen kanske den svåraste punkten. Skaffa några vänner att spela med
 
-# Att generera kort
-Ladda hem python 3 och kör generator.py. Några python paket kommer behövas laddas hem med "pip".
+# Att generera kort (windows)
+Ladda hem python 3 från:
+https://www.python.org/downloads/windows/
+
+Ladda hem detta repo och öppna en terminal och gå till det nerladdeade repots rot
+
+Uppsättning (Bara första gången)
+```
+pip install jinja2
+pip install pdfkit
+```
+Bygg
+```
+python generator.py
+```
+

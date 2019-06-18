@@ -30,7 +30,7 @@ cheatSheetFront = """<div class="box box-sheet">
 		  	</tr>
 		  </table>
 		  <ul>
-		    <li>Efter lyckat ligg tas ett utfallskort</li>
+		    <li>Efter lyckat ligg tas ett utfallskort som måste spelas på en gång</li>
 		  </ul>
 		</div>
 	  </div>"""

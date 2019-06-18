@@ -103,13 +103,13 @@
 			},
 			{
 				"title": "Tveksam släkting",
-				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men ditt rykte blir ytterst skammfilat",
+				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men ditt rykte blir ytterst skamfilat",
 				"count": 1,
 				"summation": "+1<sex/> -5<heart/>"
 			},
 			{
 				"title": "Kondom",
-				"description": "Utmärk för att förhindra könssjukdomar. Kan lustigt nog appliceras i efterhand",
+				"description": "Utmärkt för att förhindra könssjukdomar. Kan lustigt nog appliceras i efterhand",
 				"count": 1
 			},
 			{
@@ -240,7 +240,7 @@
 			},
 			{
 				"title": "Låg med X:et?",
-				"description": "Du var nog för full igår. Hur som helst verkar det som om att du kom hem med ditt X i går natt. Det räknas ju inte som ett nytt ligg.",
+				"description": "Du var för full igår. Hur som helst kom hem med ditt X istället för ditt tänkta byte. Detta räknas inte och det blir som om inget ligg skett",
 				"count": 1,
 				"summation": "-1<sex/>"
 			},
@@ -257,10 +257,11 @@
 				"summation": "+1<sex/>"
 			},
 			{
-				"title": "Munherpes",
-				"description": "-4<heart/> under 2 turer. Men med tanken på hur alla strular runt har du 1-4 på en tärning att smitta valfria motspelare",
+				"title": "Sugmärke",
+				"description": "-4<heart/> under 2 turer. Men med tanken på hur alla strular runt har du 1-4 på en tärning att \"smitta\" valfri motspelare",
 				"count": 1,
-				"turns": 2
+				"turns": 2,
+				"summation": "-4<heart/>2<clock/>+</give>"
 			},
 			{
 				"title": "Förhållande",
@@ -283,7 +284,7 @@
 			},
 			{
 				"title": "Kan inte gå ifrån",
-				"description": "Hens föräldrar kom förbi efter. Det är pinsamt för alla men ingen kan gå därifrån. Stå över ett kast.",
+				"description": "Hens föräldrar kom förbi efter. Det är pinsamt för alla men ingen kan gå därifrån. Stå över en tur.",
 				"count": 1,
 				"turns": 1,
 				"summation": "1<clock/>"
@@ -355,7 +356,7 @@
 				"count": 1
 			},
 			{
-				"title": "Linnéa",
+				"title": "Sara",
 				"frontImage": "Images/bird1.svg",
 				"values": ["Tjej", 2, 2],
 				"count": 2

@@ -1,10 +1,12 @@
-#!/usr/bin/env/python
+#!/usr/bin/env python3
 
 from jinja2 import Environment
 from PyPDF2 import PdfFileWriter, PdfFileReader
 import json
 import pdfkit
 import cheatSheet
+import sys
+import traceback
 
 frontTemplate = """
 <!DOCTYPE html>

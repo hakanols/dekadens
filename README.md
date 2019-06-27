@@ -35,7 +35,7 @@ python generator.py
 ```
 
 # License
-<p>Kortgenereringen är släpt under <b>MIT</b> licens. Fritt att använda för egna spel.<br>
+<p>Kortgenereringen är släppt under <b>MIT</b> licens. Fritt att använda till egna spel.<br>
 Spelet Samtycke är släppt under <b>CC BY-NC 3.0</b>. Fritt att skriva ut och spela men förbjudet att sälja vidare.</p>
 <a rel="license" href="https://opensource.org/licenses/MIT/"><img alt="MIT-license" src="Images/MIT-license.svg" height="50"/></a>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="CC by-nc" src="Images/CC-by-nc.svg" height="50"/></a>

@@ -34,3 +34,7 @@ Bygg
 python generator.py
 ```
 
+# License
+
+<a rel="license" href="https://opensource.org/licenses/MIT/"><img alt="MIT-license" src="Images/MIT-license.svg" height="50"/></a>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="CC by-nc" src="Images/CC-by-nc.svg" height="50"/></a>

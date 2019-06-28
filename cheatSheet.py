@@ -1,6 +1,6 @@
-cheatSheetFront = """<div class="box box-sheet">
+cheatSheetFront = """<div class="box box-sheet" style="border: 5px solid white;">
 		<div class="inner inner-sheet">
-		  <ul>
+		  <ul style="margin: 0px; padding-left: 15px; padding-bottom: 8px">
 			<li>Under din tur välj ett av följande alternativ:</li>
 			<ul>
 			  <li>Dra ett händelsekort</li>
@@ -29,14 +29,14 @@ cheatSheetFront = """<div class="box box-sheet">
 			  <th class="dice">1-5</th>
 		  	</tr>
 		  </table>
-		  <ul>
+		  <ul style="margin: 0px; padding-left:15px; padding-top: 8px"">
 		    <li>Efter lyckat ligg tas ett utfallskort som måste spelas på en gång</li>
 		  </ul>
 		</div>
 	  </div>"""
 
 cheatSheetBack = """<div class="box box-sheet">
-	    <div class="inner inner-sheet"">
+	    <div class="inner inner-sheet">
 		  <table style="height:100%; vertical-align: middle; text-align: center;">
 			<tr>
 			  <th><img src=Images/bird1.svg style="max-width:70%; height: auto;"></th>

@@ -43,7 +43,7 @@ frontTemplate = """
 	{% for cardType in cardTypes -%}
 	{% for card in cardType.cards -%}
 	{%for x in range(card.count) -%}
-	  <div class="box box-card" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;">
+	  <div class="box box-card" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%; border: 5px solid white;">
 		<div class="inner inner-card">
 		  <table style="width:100%; height: 100%; margin: 0px;">
 			<tr style="height: 100%; vertical-align: top;">
@@ -147,13 +147,20 @@ backTemplate = """
 </html>
 """
 
+options = {
+    'margin-top': '15px',
+    'margin-right': '15px',
+    'margin-bottom': '15px',
+    'margin-left': '15px'
+}
+
+numerOfCheatSheet = 4
+
 def debug(text):
     print(text)
     return ''
 
 def read_json_file():
-    numerOfCheatSheet = 3
-
     with open('data.json') as json_file:  
         data = json.load(json_file)
 
@@ -170,8 +177,8 @@ def read_json_file():
 def pdf_from_html():
     path_wkthmltopdf = r'.\lib\wkhtmltopdf.exe'
     config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)
-    pdfkit.from_file('fronts.html', 'fronts.pdf', configuration=config)
-    pdfkit.from_file('backs.html', 'backs.pdf', configuration=config)
+    pdfkit.from_file('fronts.html', 'fronts.pdf', options=options, configuration=config)
+    pdfkit.from_file('backs.html', 'backs.pdf', options=options, configuration=config)
     pdfkit.from_file('instructions.html', 'instructions.pdf', configuration=config)
 
 def pdf_mix_it_up():

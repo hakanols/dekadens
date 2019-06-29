@@ -28,6 +28,7 @@ Uppsättning (Bara första gången)
 ```
 pip install jinja2
 pip install pdfkit
+pip install imgkit
 ```
 Bygg
 ```

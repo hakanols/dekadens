@@ -26,6 +26,7 @@ from jinja2 import Environment
 from PyPDF2 import PdfFileWriter, PdfFileReader
 import json
 import pdfkit
+import imgkit
 import cheatSheet
 import sys
 import traceback
@@ -201,3 +202,10 @@ if __name__ == '__main__':
     read_json_file()
     pdf_from_html()
     pdf_mix_it_up()
+	
+	#SVG test
+    svg_options = {
+        'format': 'svg',
+    }
+    svg_config = imgkit.config(wkhtmltoimage=r'.\lib\wkhtmltoimage.exe')
+    imgkit.from_file('fronts.html', 'out.svg', options=svg_options, config=svg_config)

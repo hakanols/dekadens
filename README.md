@@ -24,13 +24,15 @@ https://www.python.org/downloads/windows/
 
 Ladda hem detta repo och öppna en terminal och gå till det nerladdeade repots rot
 
-Uppsättning (Bara första gången)
+### Uppsättning (Bara första gången)
 ```
 pip install jinja2
 pip install pdfkit
 pip install imgkit
 ```
-Bygg
+Ladda hem wkhtmltopdf from https://wkhtmltopdf.org/downloads.html och installera under mappen "lib" i repot.
+
+### Bygg
 ```
 python generator.py
 ```

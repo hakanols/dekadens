@@ -184,7 +184,7 @@ def pdf_from_html():
     config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)
     pdfkit.from_file('fronts.html', 'fronts.pdf', options=options, configuration=config)
     pdfkit.from_file('backs.html', 'backs.pdf', options=options, configuration=config)
-    pdfkit.from_file('instructions.html', 'instructions.pdf', configuration=config)
+    pdfkit.from_file('instructions.html', 'instructions.pdf', options=options, configuration=config)
 
 def pdf_mix_it_up():
     output = PdfFileWriter()

@@ -6,3 +6,5 @@
 /cards.pdf
 /instructions.pdf
 /__pycache__/*.pyc
+/board.html
+/board.svg

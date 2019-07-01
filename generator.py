@@ -43,51 +43,55 @@ frontTemplate = """
 	<div style="text-align:center;">
 	{% for cardType in cardTypes -%}
 	{% for card in cardType.cards -%}
-	{%for x in range(card.count) -%}
-	  <div class="box box-card" style="background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%; border: 5px solid white;">
-		<div class="inner inner-card">
-		  <table style="width:100%; height: 100%; margin: 0px;">
-			<tr style="height: 100%; vertical-align: top;">
-			  <td>
-				<h4>{{ card.title }}</h4>
-				<p>{{ card.description }}</p>
-				{% for attribute in card.attributes -%}
-				<h5>{{ attribute.title }}</h5>
-				<p>{{ attribute.description }}</p>
-				{% endfor -%}
-				{% if cardType.template -%}
-				<br>
-				{%for x in range(cardType.template|length)-%}
-				<p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
-				<br>
-				{% endfor -%}
-				{% endif -%}
-				{% if cardType.countText -%}
-				<p><b>{{ cardType.countText }}</b> {{card.count}}</p>
-				{% endif -%}
-			  </td>
-			</tr>
-			{% if card.turns -%}
-			<tr style="height: 0;">
-			  <td>
-				<table style="width:100%; text-align: center;">
-				<tr>
-				  {% for t in range(card.turns) -%}
-				  <td><div class="circle"><span>{{t+1}}</span></div></td>
+	{% for x in range(card.count) -%}
+	  <div class="box box-card">
+		<div class="inner" style="width:100%; height: 100%;">
+		  <div style="width:100%; height: 100%; display: table; background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;">
+			<div class="inner-card" style="width:100%; height: 100%;">
+			  <table style="width:100%; height: 100%; margin: 0px;">
+				<tr style="height: 100%; vertical-align: top;">
+				  <td>
+				  <h4>{{ card.title }}</h4>
+				  <p>{{ card.description }}</p>
+				  {% for attribute in card.attributes -%}
+				  <h5>{{ attribute.title }}</h5>
+				  <p>{{ attribute.description }}</p>
 				  {% endfor -%}
+				  {% if cardType.template -%}
+				  <br>
+				  {%for x in range(cardType.template|length)-%}
+				  <p><b>{{cardType.template[x]}}:</b> {{card['values'][x]}}</p>
+				  <br>
+				  {% endfor -%}
+				  {% endif -%}
+				  {% if cardType.countText -%}
+				  <p><b>{{ cardType.countText }}</b> {{card.count}}</p>
+				  {% endif -%}
+				  </td>
 				</tr>
-				</table>
-			  </td>
-			</tr>
-			{% endif -%}
-			{% if card.summation -%}
-			<tr style="height: 0;">
-			  <td>
-				<p class="summation">{{ card.summation }}</p>
-			  </td>
-			</tr>
-			{% endif -%}
-		  </table>
+				{% if card.turns -%}
+				<tr style="height: 0;">
+				  <td>
+					<table style="width:100%; text-align: center;">
+					  <tr>
+						{% for t in range(card.turns) -%}
+						<td><div class="circle"><span>{{t+1}}</span></div></td>
+						{% endfor -%}
+					  </tr>
+					</table>
+				  </td>
+				</tr>
+				{% endif -%}
+				{% if card.summation -%}
+				<tr style="height: 0;">
+				  <td>
+					<p class="summation">{{ card.summation }}</p>
+				  </td>
+				</tr>
+			  {% endif -%}
+			  </table>
+			</div>
+		  </div>
 		</div>
 	  </div>{% endfor -%}
 	  {% endfor -%}
@@ -202,10 +206,3 @@ if __name__ == '__main__':
     read_json_file()
     pdf_from_html()
     pdf_mix_it_up()
-	
-	#SVG test
-    svg_options = {
-        'format': 'svg',
-    }
-    svg_config = imgkit.config(wkhtmltoimage=r'.\lib\wkhtmltoimage.exe')
-    imgkit.from_file('fronts.html', 'out.svg', options=svg_options, config=svg_config)

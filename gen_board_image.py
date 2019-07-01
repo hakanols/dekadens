@@ -80,7 +80,7 @@ def generate_board_image():
     svg_options = {
         'format': 'svg'
     }
-    svg_config = imgkit.config(wkhtmltoimage=r'.\lib\wkhtmltoimage.exe')
+    svg_config = imgkit.config(wkhtmltoimage=r'.\lib\wkhtmltopdf\bin\wkhtmltoimage.exe')
     imgkit.from_file('board.html', 'board.svg', options=svg_options, config=svg_config)
 
 if __name__ == '__main__':

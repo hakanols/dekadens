@@ -180,7 +180,7 @@ def read_json_file():
             outfile.write(backPages)
 
 def pdf_from_html():
-    path_wkthmltopdf = r'.\lib\wkhtmltopdf.exe'
+    path_wkthmltopdf = r'.\lib\wkhtmltopdf\bin\wkhtmltopdf.exe'
     config = pdfkit.configuration(wkhtmltopdf=path_wkthmltopdf)
     pdfkit.from_file('fronts.html', 'fronts.pdf', options=options, configuration=config)
     pdfkit.from_file('backs.html', 'backs.pdf', options=options, configuration=config)

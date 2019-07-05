@@ -30,7 +30,7 @@ pip install jinja2
 pip install pdfkit
 pip install imgkit
 ```
-Ladda hem wkhtmltopdf from https://wkhtmltopdf.org/downloads.html och installera under mappen "lib" i repot.
+Ladda hem wkhtmltopdf från https://wkhtmltopdf.org/downloads.html och installera under mappen "lib" i repot.
 
 ### Bygg
 ```

@@ -26,7 +26,6 @@ from jinja2 import Environment
 from PyPDF2 import PdfFileWriter, PdfFileReader
 import json
 import pdfkit
-import imgkit
 import cheatSheet
 import sys
 import traceback

@@ -1,4 +1,4 @@
-cheatSheetFront = """<div class="box box-sheet" style="border: 5px solid white;">
+cheatSheetFront = """<div class="box box-sheet" style="border: 1px solid white;">
 		<div class="inner inner-sheet">
 		  <ul style="margin: 0px; padding-left: 15px; padding-bottom: 8px">
 			<li>Under din tur välj ett av följande alternativ:</li>
@@ -35,7 +35,7 @@ cheatSheetFront = """<div class="box box-sheet" style="border: 5px solid white;"
 		</div>
 	  </div>"""
 
-cheatSheetBack = """<div class="box box-sheet">
+cheatSheetBack = """<div class="box box-sheet" style="border: 1px solid black;">
 	    <div class="inner inner-sheet">
 		  <table style="height:100%; vertical-align: middle; text-align: center;">
 			<tr>

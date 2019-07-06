@@ -43,7 +43,7 @@ frontTemplate = """
 	{% for cardType in cardTypes -%}
 	{% for card in cardType.cards -%}
 	{% for x in range(card.count) -%}
-	  <div class="box box-card" style="border: 5px solid white;">
+	  <div class="box box-card" style="border: 1px solid white;">
 		<div class="inner" style="width:100%; height: 100%;">
 		  <div style="width:100%; height: 100%; display: table; background-image: url({%if card.frontImage %}{{card.frontImage}}{% else %}{{cardType.frontImage}}{% endif %}); background-repeat:no-repeat; background-position: center; background-size: 80%;">
 			<div class="inner-card" style="width:100%; height: 100%;">
@@ -115,7 +115,7 @@ backTemplate = """
 	{% for cardType in cardTypes -%}
 	{% for card in cardType.cards -%}
 	{% for x in range(card.count)-%}
-	  <div class="box box-card">
+	  <div class="box box-card" style="border: 1px solid black;">
 		<div class="inner inner-card" style="display: table;">
 		  <h4 style="display: table-row;">{{ cardType.name }}</h4>
 		  <div  style="display: table-row; height:100%;">

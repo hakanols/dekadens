@@ -196,9 +196,27 @@
 				"summation": "+5<heart/> 1<clock/>"
 			},
 			{
+				"title": "Kort men gott",
+				"description": "Lagt kort ligger och kort ligg gäller.",
+				"count": 1,
+				"summation": "+1<sex/>"
+			},
+			{
+				"title": "Blink till Monopol",
+				"description": "Du vinner en skönhetstävling. Inkassera kr 400.",
+				"count": 1,
+				"summation": "+2<heart/>"
+			},
+			{
+				"title": "Relativt",
+				"description": "Du börjar umgås med fula människor. Din attraktion ökar i förhållande.",
+				"count": 1,
+				"summation": "+1<heart/>"
+			},
+			{
 				"title": "",
 				"description": "",
-				"count": 4
+				"count": 1
 			}
 		]
 	},
@@ -307,9 +325,16 @@
 				"count": 1
 			},
 			{
+				"title": "Insextuell",
+				"description": "Du blir bokstavligt talat bisexuell och bara blir bara attraherad av insekter under 2 turer",
+				"count": 1,
+				"turns": 2,
+				"summation": "<cross/><sex/>2<clock/>"
+			},
+			{
 				"title": "",
 				"description": "",
-				"count": 4
+				"count": 3
 			}
 		]
 	},

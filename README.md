@@ -13,7 +13,9 @@ Spelkorten genereras fullständigt från kod och kan skrivas ut på en vanlig sk
 andra språk borde vara lätt. Finns bara på svenska för tillfället.
 
 # Skaffa spelet
-* Ladda bara hem cards.pdf och instructions.pdf och skriv ut
+* Ladda bara hem följande filer och skriv ut
+  * [cards.pdf](https://github.com/hakanols/Samtycke/releases/latest/download/cards.pdf)
+  * [instructions.pdf](https://github.com/hakanols/Samtycke/releases/latest/download/instructions.pdf)
 * Rota fram en tärning eller kör med simulerad tärning. Se instructions.pdf
 * Skaffa fram några tändstickor eller andra markörer
 * Sen kanske den svåraste punkten. Skaffa några vänner att spela med

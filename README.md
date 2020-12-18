@@ -14,8 +14,8 @@ andra språk borde vara lätt. Finns bara på svenska för tillfället.
 
 # Skaffa spelet
 * Ladda bara hem följande filer och skriv ut
-  * [cards.pdf](https://github.com/hakanols/Samtycke/releases/latest/download/cards.pdf)
-  * [instructions.pdf](https://github.com/hakanols/Samtycke/releases/latest/download/instructions.pdf)
+  * [cards.pdf](https://github.com/hakanols/dekadens/releases/latest/download/cards.pdf)
+  * [instructions.pdf](https://github.com/hakanols/dekadens/releases/latest/download/instructions.pdf)
 * Rota fram en tärning eller kör med simulerad tärning. Se instructions.pdf
 * Skaffa fram några tändstickor eller andra markörer
 * Sen kanske den svåraste punkten. Skaffa några vänner att spela med
@@ -31,6 +31,7 @@ Ladda hem detta repo och öppna en terminal och gå till det nerladdeade repots 
 pip install jinja2
 pip install pdfkit
 pip install imgkit
+pip install PyPDF2
 ```
 Ladda hem wkhtmltopdf från https://wkhtmltopdf.org/downloads.html och installera under mappen "lib" i repot.
 
@@ -41,6 +42,6 @@ python generator.py
 
 # License
 <p>Kortgenereringen är släppt under <b>MIT</b> licens. Fritt att använda till egna spel.<br>
-Spelet Samtycke är släppt under <b>CC BY-NC 3.0</b>. Fritt att skriva ut och spela men förbjudet att sälja vidare.</p>
+Spelet Dekadens är släppt under <b>CC BY-NC 3.0</b>. Fritt att skriva ut och spela men förbjudet att sälja vidare.</p>
 <a rel="license" href="https://opensource.org/licenses/MIT/"><img alt="MIT-license" src="Images/MIT-license.svg" height="50"/></a>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="CC by-nc" src="Images/CC-by-nc.svg" height="50"/></a>

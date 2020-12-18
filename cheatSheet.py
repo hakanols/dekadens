@@ -45,7 +45,7 @@ cheatSheetBack = """<div class="box box-sheet" style="border: 1px solid black;">
 			  <th><img src=Images/bird4.svg style="max-width:70%; height: auto;"></th>
 			</tr>
 			<tr>
-			  <td colspan = "4"><h1 style="margin: 0;">Samtycke</h1></td>
+			  <td colspan = "4"><h1 style="margin: 0;">Dekadens</h1></td>
 			</tr>
 			<tr>
 			  <th><img src=Images/bird5.svg style="max-width:70%; height: auto;"></th>

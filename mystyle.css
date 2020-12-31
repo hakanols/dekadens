@@ -129,7 +129,7 @@ flake::before {
 }
 
 clock::before {
-	content: "⌛";
+	content: "☽";
 	color: black;
 }
 

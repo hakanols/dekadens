@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Kön",
+		"name": "Kï¿½n",
 		"backImages": ["Images/bird1.svg", "Images/bird2.svg"],
 		"cards": [
 			{
@@ -10,11 +10,11 @@
 				"attributes": [
 					{
 						"title": "Dubbelstandard",
-						"description": "+1<heart/> för varje lyckat ligg"
+						"description": "+1<heart/> fï¿½r varje lyckat ligg"
 					},
 					{
-						"title": "Ojämlikhet",
-						"description": "Startar med 2 händelsekort"
+						"title": "Ojï¿½mlikhet",
+						"description": "Startar med 2 hï¿½ndelsekort"
 					}
 				]
 			},
@@ -25,10 +25,10 @@
 				"attributes": [
 					{
 						"title": "Multitasking",
-						"description": "Dra ett händelsekort efter lyckat ligg"
+						"description": "Dra ett hï¿½ndelsekort efter lyckat ligg"
 					},
 					{
-						"title": "Kvinnlig fägring",
+						"title": "Kvinnlig fï¿½gring",
 						"description": "Starta med 4<heart/>"
 					}
 				]
@@ -36,7 +36,7 @@
 		]
 	},
 	{
-		"name": "Läggning",
+		"name": "Lï¿½ggning",
 		"backImages": ["Images/bird3.svg", "Images/bird4.svg", "Images/bird6.svg"],
 		"cards": [
 			{
@@ -46,7 +46,7 @@
 				"attributes": [
 					{
 						"title": "Melloresistent",
-						"description": "Opåverkad av mello"
+						"description": "Opï¿½verkad av mello"
 					}
 				]
 			},
@@ -56,8 +56,8 @@
 				"count": 2,
 				"attributes": [
 					{
-						"title": "Allätare",
-						"description": "Kan ligga med båda könen"
+						"title": "Allï¿½tare",
+						"description": "Kan ligga med bï¿½da kï¿½nen"
 					}
 				]
 			},
@@ -68,155 +68,173 @@
 				"attributes": [
 					{
 						"title": "Utmanad",
-						"description": "Det är svårt att hitta lämpliga partners när utbudet är begränsat. Ligg räknas dubbelt"
+						"description": "Det ï¿½r svï¿½rt att hitta lï¿½mpliga partners nï¿½r utbudet ï¿½r begrï¿½nsat. Ligg rï¿½knas dubbelt"
 					}
 				]
 			}
 		]
 	},
 	{
-		"name": "Händelse",
+		"name": "Hï¿½ndelse",
 		"frontImage": "Images/bird7.svg",
 		"backImages": ["Images/bird7.svg"],
 		"cards": [
 			{
-				"title": "Värsta tv:en",
+				"title": "Vï¿½rsta tv:en",
 				"description": "Du skaffar den fetaste tv:en och alla andra tappar attraktion",
 				"count": 1,
 				"summation": "<give/> -1<heart/>"
 			},
 			{
 				"title": "Baktalaren",
-				"description": "Du lyckas snacka så kolossal mycket skit att du får två av dina motspelare att byta <heart/>",
+				"description": "Du lyckas snacka sï¿½ kolossal mycket skit att du fï¿½r tvï¿½ av dina motspelare att byta <heart/>",
 				"count": 1
 			},
 			{
-				"title": "Körkort",
-				"description": "Du skaffar körkort och blir het som attan",
+				"title": "Kï¿½rkort",
+				"description": "Du skaffar kï¿½rkort och blir het som attan",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Symbios",
-				"description": "Du får valet med att ligga med någon motspelare. Glöm ej samtycke. Kom ihåg att bara första ligget räknas.",
+				"description": "Du fï¿½r valet med att ligga med nï¿½gon motspelare. Glï¿½m ej samtycke. Kom ihï¿½g att bara fï¿½rsta ligget rï¿½knas.",
 				"count": 1
 			},
 			{
-				"title": "Tveksam släkting",
-				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men ditt rykte blir ytterst skamfilat",
+				"title": "Tveksam slï¿½kting",
+				"description": "Du lyckas fï¿½ ihop det med en avlï¿½gsen slï¿½kting. Det ï¿½r ju ett ligg men ditt rykte blir ytterst skamfilat",
 				"count": 1,
 				"summation": "+1<sex/> -5<heart/>"
 			},
 			{
 				"title": "Kondom",
-				"description": "Utmärkt för att förhindra könssjukdomar. Kan lustigt nog appliceras i efterhand",
+				"description": "Utmï¿½rkt fï¿½r att fï¿½rhindra kï¿½nssjukdomar. Kan lustigt nog appliceras i efterhand",
 				"count": 1
 			},
 			{
 				"title": "Vinballe",
-				"description": "Du lyckas supa en motspelare så pass full att hen inte kan ligga de 2 kommande turerna",
+				"description": "Du lyckas supa en motspelare sï¿½ pass full att hen inte kan ligga de 2 kommande turerna",
 				"count": 1,
 				"turns": 2,
 				"summation": "<give/> <cross/><sex/> 2<clock/>"
 			},
 			{
-				"title": "Pava rövin",
-				"description": "En pava rött kan öka din attraktion med 5<heart/> temporärt under 1 tur",
+				"title": "Pava rï¿½vin",
+				"description": "En pava rï¿½tt kan ï¿½ka din attraktion med 5<heart/> temporï¿½rt under 1 tur",
 				"count": 1,
 				"turns": 1,
 				"summation": "+5<heart/> 1<clock/>"
 			},
 			{
 				"title": "Romantisk mat",
-				"description": "Du lär dig laga mat och sånt är ju hett",
+				"description": "Du lï¿½r dig laga mat och sï¿½nt ï¿½r ju hett",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
-				"title": "Stöka till",
-				"description": "Du stökar till hos en motspelare och denna någon tappar delar av sin attraktion",
+				"title": "Stï¿½ka till",
+				"description": "Du stï¿½kar till hos en motspelare och denna nï¿½gon tappar delar av sin attraktion",
 				"count": 1,
 				"summation": "<give/> -2<heart/>"
 			},
 			{
-				"title": "Sängkammarblick",
-				"description": "Du lyckas flörta in dig hos någon av personerna i staden och förstöra chansen för alla motspelare att ligga med hen",
+				"title": "Sï¿½ngkammarblick",
+				"description": "Du lyckas flï¿½rta in dig hos nï¿½gon av personerna i staden och fï¿½rstï¿½ra chansen fï¿½r alla motspelare att ligga med hen",
 				"count": 1
 			},
 			{
 				"title": "Lunarstorm",
-				"description": "Du skaffar Lunarstorm men det är ju några decennier för sent så inget händer",
+				"description": "Du skaffar Lunarstorm men det ï¿½r ju nï¿½gra decennier fï¿½r sent sï¿½ inget hï¿½nder",
 				"count": 1
 			},
 			{
-				"title": "Dåligt husdjur",
-				"description": "Du lyckas pracka på en motspelare ett ocharmigt husdjur och denna tappar en del av sin attraktion",
+				"title": "Dï¿½ligt husdjur",
+				"description": "Du lyckas pracka pï¿½ en motspelare ett ocharmigt husdjur och denna tappar en del av sin attraktion",
 				"count": 1,
 				"summation": "<give/> -2<heart/>"
 			},
 			{
 				"title": "Snygg FB bild",
-				"description": "Beskrivning behövs inte",
+				"description": "Beskrivning behï¿½vs inte",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Heart of steel",
-				"description": "Använt detta kort för att ta dig ur en förälskelse eller ett förhållande",
+				"description": "Anvï¿½nt detta kort fï¿½r att ta dig ur en fï¿½rï¿½lskelse eller ett fï¿½rhï¿½llande",
 				"count": 1
 			},
 			{
 				"title": "Solsemester",
-				"description": "Du kommer hem solbränd och värdsvan från en semester.",
+				"description": "Du kommer hem solbrï¿½nd och vï¿½rdsvan frï¿½n en semester.",
 				"count": 1,
 				"summation": "+3<heart/>"
 			},
 			{
-				"title": "Bemästra språk",
-				"description": "Du lyckas lära dig några fraser på ett nytt språk. Tillräckligt för att imponera på folk",
+				"title": "Bemï¿½stra sprï¿½k",
+				"description": "Du lyckas lï¿½ra dig nï¿½gra fraser pï¿½ ett nytt sprï¿½k. Tillrï¿½ckligt fï¿½r att imponera pï¿½ folk",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Mello",
-				"description": "Mello varar i 2 turer och alla som är bi eller homo är helt utslagna och står över två rundor",
+				"description": "Mello varar i 2 turer och alla som ï¿½r bi eller homo ï¿½r helt utslagna och stï¿½r ï¿½ver tvï¿½ rundor",
 				"count": 1,
 				"turns": 2
 			},
 			{
 				"title": "Examen",
-				"description": "Du skaffar en högskoleutbildning som tråkigt nog inte är så attraktivt som det borde men det är ju värt nått.",
+				"description": "Du skaffar en hï¿½gskoleutbildning som trï¿½kigt nog inte ï¿½r sï¿½ attraktivt som det borde men det ï¿½r ju vï¿½rt nï¿½tt.",
 				"count": 1,
 				"summation": "+1<heart/>"
 			},
 			{
-				"title": "En bra jäkla dag",
-				"description": "Du har kort och gott en bra jäkla dag.",
+				"title": "En bra jï¿½kla dag",
+				"description": "Du har kort och gott en bra jï¿½kla dag.",
 				"count": 1,
 				"summation": "+5<heart/> 1<clock/>"
 			},
 			{
 				"title": "Kort men gott",
-				"description": "Lagt kort ligger och kort ligg gäller.",
+				"description": "Lagt kort ligger och kort ligg gï¿½ller.",
 				"count": 1,
 				"summation": "+1<sex/>"
 			},
 			{
 				"title": "Blink till Monopol",
-				"description": "Du vinner en skönhetstävling. Inkassera kr 400.",
+				"description": "Du vinner en skï¿½nhetstï¿½vling. Inkassera kr 400.",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Relativt",
-				"description": "Du börjar umgås med fula människor. Din attraktion ökar i förhållande.",
+				"description": "Du bï¿½rjar umgï¿½s med fula mï¿½nniskor. Din attraktion ï¿½kar i fï¿½rhï¿½llande.",
+				"count": 1,
+				"summation": "+1<heart/>"
+			},
+			{
+				"title": "Armbrytning",
+				"description": "Du vann Ã¶ver en motspelare i armbrytning.",
+				"count": 1,
+				"summation": "+1<heart/><give/> -1<heart/>"
+			},
+			{
+				"title": "Ã„ndra stÃ¥ndpunkt",
+				"description": "Sprid ut att det faktiskt var en annan motspelare som hjÃ¤lpte dig den dÃ¤r gÃ¥ngen.",
+				"count": 1,
+				"summation": "<give/> 2<heart/><give/> -2<heart/>"
+			},
+			{
+				"title": "FrisÃ¶ren",
+				"description": "GÃ¥ till frisÃ¶ren och fÃ¥ en stilig frisyr.",
 				"count": 1,
 				"summation": "+1<heart/>"
 			},
 			{
 				"title": "",
 				"description": "",
-				"count": 1
+				"count": 2
 			}
 		]
 	},
@@ -227,18 +245,18 @@
 		"cards": [
 			{
 				"title": "Blue waffle",
-				"description": "Om du ligger med någon under de kommande 3 turerna förlorar du -4<heart/>",
+				"description": "Om du ligger med nï¿½gon under de kommande 3 turerna fï¿½rlorar du -4<heart/>",
 				"count": 1,
 				"turns": 3
 			},
 			{
-				"title": "Kvaströta",
-				"description": "Om du ligger med någon under de kommande 4 turerna förlorar du -5<heart/>",
+				"title": "Kvastrï¿½ta",
+				"description": "Om du ligger med nï¿½gon under de kommande 4 turerna fï¿½rlorar du -5<heart/>",
 				"count": 1,
 				"turns": 4
 			},
 			{
-				"title": "Det här var nytt",
+				"title": "Det hï¿½r var nytt",
 				"description": "Du vet inte om du gillade det du upplevde. Det var onekligen nytt. Ta en tur och funderar",
 				"count": 1,
 				"turns": 1,
@@ -257,71 +275,71 @@
 				"summation": "+3<heart/>"
 			},
 			{
-				"title": "Låg med X:et?",
-				"description": "Du var för full igår. Hur som helst kom hem med ditt X istället för ditt tänkta byte. Detta räknas inte och det blir som om inget ligg skett",
+				"title": "Lï¿½g med X:et?",
+				"description": "Du var fï¿½r full igï¿½r. Hur som helst kom hem med ditt X istï¿½llet fï¿½r ditt tï¿½nkta byte. Detta rï¿½knas inte och det blir som om inget ligg skett",
 				"count": 1,
 				"summation": "-1<sex/>"
 			},
 			{
-				"title": "B-kändis",
-				"description": "Nice. Ligget var en b-kändis.",
+				"title": "B-kï¿½ndis",
+				"description": "Nice. Ligget var en b-kï¿½ndis.",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Trekant",
-				"description": "Typ bästa kortet i hela spelet. Ditt ligg bjöd med en okänd främling och det hela slutade i en trekant. Räknas som 2 ligg.",
+				"description": "Typ bï¿½sta kortet i hela spelet. Ditt ligg bjï¿½d med en okï¿½nd frï¿½mling och det hela slutade i en trekant. Rï¿½knas som 2 ligg.",
 				"count": 1,
 				"summation": "+1<sex/>"
 			},
 			{
-				"title": "Sugmärke",
-				"description": "-4<heart/> under 2 turer. Men med tanken på hur alla strular runt har du 1-4 på en tärning att \"smitta\" valfri motspelare",
+				"title": "Sugmï¿½rke",
+				"description": "-4<heart/> under 2 turer. Men med tanken pï¿½ hur alla strular runt har du 1-4 pï¿½ en tï¿½rning att \"smitta\" valfri motspelare",
 				"count": 1,
 				"turns": 2,
 				"summation": "-4<heart/>2<clock/>+</give>"
 			},
 			{
-				"title": "Förhållande",
-				"description": "Du lyckas befinna dig i ett förhållande. Du kan inte göra några liggförsök de 3 närmaste turerna.",
+				"title": "Fï¿½rhï¿½llande",
+				"description": "Du lyckas befinna dig i ett fï¿½rhï¿½llande. Du kan inte gï¿½ra nï¿½gra liggfï¿½rsï¿½k de 3 nï¿½rmaste turerna.",
 				"count": 1,
 				"turns": 3,
 				"summation": "<cross/><sex/>3<clock/>"
 			},
 			{
-				"title": "Förälskelse",
-				"description": "Du känner nått som inte är bra för detta spel. Du kan ej göra några liggförsök tills du slagit 1-2 på en tärning i början av din tur.",
+				"title": "Fï¿½rï¿½lskelse",
+				"description": "Du kï¿½nner nï¿½tt som inte ï¿½r bra fï¿½r detta spel. Du kan ej gï¿½ra nï¿½gra liggfï¿½rsï¿½k tills du slagit 1-2 pï¿½ en tï¿½rning i bï¿½rjan av din tur.",
 				"count": 1,
 				"summation": "<cross/><sex/>"
 			},
 			{
 				"title": "Mello",
-				"description": "Ni låg igång Melodifestivalen. Mello varar i 2 turer och alla som är bi eller homo är helt utslagna och står över två slag.",
+				"description": "Ni lï¿½g igï¿½ng Melodifestivalen. Mello varar i 2 turer och alla som ï¿½r bi eller homo ï¿½r helt utslagna och stï¿½r ï¿½ver tvï¿½ slag.",
 				"count": 1,
 				"turns": 2
 			},
 			{
-				"title": "Kan inte gå ifrån",
-				"description": "Hens föräldrar kom förbi efter. Det är pinsamt för alla men ingen kan gå därifrån. Stå över en tur.",
+				"title": "Kan inte gï¿½ ifrï¿½n",
+				"description": "Hens fï¿½rï¿½ldrar kom fï¿½rbi efter. Det ï¿½r pinsamt fï¿½r alla men ingen kan gï¿½ dï¿½rifrï¿½n. Stï¿½ ï¿½ver en tur.",
 				"count": 1,
 				"turns": 1,
 				"summation": "1<clock/>"
 			},
 			{
 				"title": "Vilt gick det till",
-				"description": "Tyvärr har du fått skavsår och kan inte göra några liggförsök de 2 kommande omgångarna.",
+				"description": "Tyvï¿½rr har du fï¿½tt skavsï¿½r och kan inte gï¿½ra nï¿½gra liggfï¿½rsï¿½k de 2 kommande omgï¿½ngarna.",
 				"count": 1,
 				"turns": 2,
 				"summation": "<cross/><sex/>2<clock/>"
 			},
 			{
 				"title": "Katastrof",
-				"description": "Du var så dålig att ditt ligg blev asexuell och kommer inte ligga med några fler för resten av spelet.",
+				"description": "Du var sï¿½ dï¿½lig att ditt ligg blev asexuell och kommer inte ligga med nï¿½gra fler fï¿½r resten av spelet.",
 				"count": 1
 			},
 			{
-				"title": "Succé",
-				"description": "Du var grym som attan och ryktes sprids. Du får lägga till en ny person till staden från de icke använda personkorten",
+				"title": "Succï¿½",
+				"description": "Du var grym som attan och ryktes sprids. Du fï¿½r lï¿½gga till en ny person till staden frï¿½n de icke anvï¿½nda personkorten",
 				"count": 1
 			},
 			{
@@ -332,16 +350,22 @@
 				"summation": "<cross/><sex/>2<clock/>"
 			},
 			{
+				"title": "Skryt",
+				"description": "Du skryter om din erÃ¶vring fÃ¶r en motspelare och det hÃ¶rs. Du tappar 1A medan vald motspelare gÃ¥r plus 1A",
+				"count": 1,
+				"summation": "-1<heart/><give/> +1<heart/>"
+			},
+			{
 				"title": "",
 				"description": "",
-				"count": 3
+				"count": 2
 			}
 		]
 	},
 	{
 		"name": "Person",
 		"backImages": ["Images/bird1.svg", "Images/bird2.svg", "Images/bird5.svg"],
-		"template": ["Kön", "<flake/> för killar", "<flake/> för tjejer"],
+		"template": ["Kï¿½n", "<flake/> fï¿½r killar", "<flake/> fï¿½r tjejer"],
 		"countText": "Ligg per spel:",
 		"cards": [
 			{
@@ -467,13 +491,13 @@
 		]
 	},
 	{
-		"name": "Liggmarkör",
+		"name": "Liggmarkï¿½r",
 		"frontImage": "Images/bird9.svg",
 		"backImages": ["Images/bird9.svg"],
 		"cards": [
 			{
-				"title": "Liggmarkör",
-				"description": "Markör som indikerar ett ligg",
+				"title": "Liggmarkï¿½r",
+				"description": "Markï¿½r som indikerar ett ligg",
 				"count": 12
 			}
 		]

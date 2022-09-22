@@ -4,7 +4,7 @@ cheatSheetFront = """<div class="box box-sheet" style="border: 1px solid white;"
 			<li>Under din tur välj ett av följande alternativ:</li>
 			<ul>
 			  <li>Dra ett händelsekort</li>
-			  <li>Gå till gymmet (+1<heart/>)</li>
+			  <li>Gå till gymmet. Rulla en D6 [1-3]=1<heart/>   [4-5]=2<heart/>   [6]=3<heart/></li>
 			  <li>Försök att ligga med en person i staden (ej medspelare)</li>
 			</ul>
 			<li>Ta ditt <heart/> minus personens <flake/> i tabellen nedan för att se vilka tärningsslag som leder till lyckat ligg</li>

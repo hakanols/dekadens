@@ -1,6 +1,6 @@
 [
 	{
-		"name": "K�n",
+		"name": "Kön",
 		"backImages": ["Images/bird1.svg", "Images/bird2.svg"],
 		"cards": [
 			{
@@ -10,11 +10,11 @@
 				"attributes": [
 					{
 						"title": "Dubbelstandard",
-						"description": "+1<heart/> f�r varje lyckat ligg"
+						"description": "+1<heart/> för varje lyckat ligg"
 					},
 					{
-						"title": "Oj�mlikhet",
-						"description": "Startar med 2 h�ndelsekort"
+						"title": "Ojämlikhet",
+						"description": "Startar med 2 händelsekort"
 					}
 				]
 			},
@@ -25,10 +25,10 @@
 				"attributes": [
 					{
 						"title": "Multitasking",
-						"description": "Dra ett h�ndelsekort efter lyckat ligg"
+						"description": "Dra ett händelsekort efter lyckat ligg"
 					},
 					{
-						"title": "Kvinnlig f�gring",
+						"title": "Kvinnlig fägring",
 						"description": "Starta med 4<heart/>"
 					}
 				]
@@ -36,7 +36,7 @@
 		]
 	},
 	{
-		"name": "L�ggning",
+		"name": "Läggning",
 		"backImages": ["Images/bird3.svg", "Images/bird4.svg", "Images/bird6.svg"],
 		"cards": [
 			{
@@ -46,7 +46,7 @@
 				"attributes": [
 					{
 						"title": "Melloresistent",
-						"description": "Op�verkad av mello"
+						"description": "Opåverkad av mello"
 					}
 				]
 			},
@@ -56,8 +56,8 @@
 				"count": 2,
 				"attributes": [
 					{
-						"title": "All�tare",
-						"description": "Kan ligga med b�da k�nen"
+						"title": "Allätare",
+						"description": "Kan ligga med båda könen"
 					}
 				]
 			},
@@ -68,148 +68,148 @@
 				"attributes": [
 					{
 						"title": "Utmanad",
-						"description": "Det �r sv�rt att hitta l�mpliga partners n�r utbudet �r begr�nsat. Ligg r�knas dubbelt"
+						"description": "Det är svårt att hitta lämpliga partners när utbudet är begränsat. Ligg räknas dubbelt"
 					}
 				]
 			}
 		]
 	},
 	{
-		"name": "H�ndelse",
+		"name": "Händelse",
 		"frontImage": "Images/bird7.svg",
 		"backImages": ["Images/bird7.svg"],
 		"cards": [
 			{
-				"title": "V�rsta tv:en",
+				"title": "Värsta tv:en",
 				"description": "Du skaffar den fetaste tv:en och alla andra tappar attraktion",
 				"count": 1,
 				"summation": "<give/> -1<heart/>"
 			},
 			{
 				"title": "Baktalaren",
-				"description": "Du lyckas snacka s� kolossal mycket skit att du f�r tv� av dina motspelare att byta <heart/>",
+				"description": "Du lyckas snacka så kolossal mycket skit att du får två av dina motspelare att byta <heart/>",
 				"count": 1
 			},
 			{
-				"title": "K�rkort",
-				"description": "Du skaffar k�rkort och blir het som attan",
+				"title": "Körkort",
+				"description": "Du skaffar körkort och blir het som attan",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Symbios",
-				"description": "Du f�r valet med att ligga med n�gon motspelare. Gl�m ej samtycke. Kom ih�g att bara f�rsta ligget r�knas.",
+				"description": "Du får valet med att ligga med någon motspelare. Glöm ej samtycke. Kom ihåg att bara första ligget räknas.",
 				"count": 1
 			},
 			{
-				"title": "Tveksam sl�kting",
-				"description": "Du lyckas f� ihop det med en avl�gsen sl�kting. Det �r ju ett ligg men ditt rykte blir ytterst skamfilat",
+				"title": "Tveksam släkting",
+				"description": "Du lyckas få ihop det med en avlägsen släkting. Det är ju ett ligg men ditt rykte blir ytterst skamfilat",
 				"count": 1,
 				"summation": "+1<sex/> -5<heart/>"
 			},
 			{
 				"title": "Kondom",
-				"description": "Utm�rkt f�r att f�rhindra k�nssjukdomar. Kan lustigt nog appliceras i efterhand",
+				"description": "Utmärkt för att förhindra könssjukdomar. Kan lustigt nog appliceras i efterhand",
 				"count": 1
 			},
 			{
 				"title": "Vinballe",
-				"description": "Du lyckas supa en motspelare s� pass full att hen inte kan ligga de 2 kommande turerna",
+				"description": "Du lyckas supa en motspelare så pass full att hen inte kan ligga de 2 kommande turerna",
 				"count": 1,
 				"turns": 2,
 				"summation": "<give/> <cross/><sex/> 2<clock/>"
 			},
 			{
-				"title": "Pava r�vin",
-				"description": "En pava r�tt kan �ka din attraktion med 5<heart/> tempor�rt under 1 tur",
+				"title": "Pava rövin",
+				"description": "En pava rött kan öka din attraktion med 5<heart/> temporärt under 1 tur",
 				"count": 1,
 				"turns": 1,
 				"summation": "+5<heart/> 1<clock/>"
 			},
 			{
 				"title": "Romantisk mat",
-				"description": "Du l�r dig laga mat och s�nt �r ju hett",
+				"description": "Du lär dig laga mat och sånt är ju hett",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
-				"title": "St�ka till",
-				"description": "Du st�kar till hos en motspelare och denna n�gon tappar delar av sin attraktion",
+				"title": "Stöka till",
+				"description": "Du stökar till hos en motspelare och denna någon tappar delar av sin attraktion",
 				"count": 1,
 				"summation": "<give/> -2<heart/>"
 			},
 			{
-				"title": "S�ngkammarblick",
-				"description": "Du lyckas fl�rta in dig hos n�gon av personerna i staden och f�rst�ra chansen f�r alla motspelare att ligga med hen",
+				"title": "Sängkammarblick",
+				"description": "Du lyckas flörta in dig hos någon av personerna i staden och förstöra chansen för alla motspelare att ligga med hen",
 				"count": 1
 			},
 			{
 				"title": "Lunarstorm",
-				"description": "Du skaffar Lunarstorm men det �r ju n�gra decennier f�r sent s� inget h�nder",
+				"description": "Du skaffar Lunarstorm men det är ju några decennier för sent så inget händer",
 				"count": 1
 			},
 			{
-				"title": "D�ligt husdjur",
-				"description": "Du lyckas pracka p� en motspelare ett ocharmigt husdjur och denna tappar en del av sin attraktion",
+				"title": "Dåligt husdjur",
+				"description": "Du lyckas pracka på en motspelare ett ocharmigt husdjur och denna tappar en del av sin attraktion",
 				"count": 1,
 				"summation": "<give/> -2<heart/>"
 			},
 			{
 				"title": "Snygg FB bild",
-				"description": "Beskrivning beh�vs inte",
+				"description": "Beskrivning behövs inte",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Heart of steel",
-				"description": "Anv�nt detta kort f�r att ta dig ur en f�r�lskelse eller ett f�rh�llande",
+				"description": "Använt detta kort för att ta dig ur en förälskelse eller ett förhållande",
 				"count": 1
 			},
 			{
 				"title": "Solsemester",
-				"description": "Du kommer hem solbr�nd och v�rdsvan fr�n en semester.",
+				"description": "Du kommer hem solbränd och värdsvan från en semester.",
 				"count": 1,
 				"summation": "+3<heart/>"
 			},
 			{
-				"title": "Bem�stra spr�k",
-				"description": "Du lyckas l�ra dig n�gra fraser p� ett nytt spr�k. Tillr�ckligt f�r att imponera p� folk",
+				"title": "Bemästra språk",
+				"description": "Du lyckas lära dig några fraser på ett nytt språk. Tillräckligt för att imponera på folk",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Mello",
-				"description": "Mello varar i 2 turer och alla som �r bi eller homo �r helt utslagna och st�r �ver tv� rundor",
+				"description": "Mello varar i 2 turer och alla som är bi eller homo är helt utslagna och står över två rundor",
 				"count": 1,
 				"turns": 2
 			},
 			{
 				"title": "Examen",
-				"description": "Du skaffar en h�gskoleutbildning som tr�kigt nog inte �r s� attraktivt som det borde men det �r ju v�rt n�tt.",
+				"description": "Du skaffar en högskoleutbildning som tråkigt nog inte är så attraktivt som det borde men det är ju värt nått.",
 				"count": 1,
 				"summation": "+1<heart/>"
 			},
 			{
-				"title": "En bra j�kla dag",
-				"description": "Du har kort och gott en bra j�kla dag.",
+				"title": "En bra jäkla dag",
+				"description": "Du har kort och gott en bra jäkla dag.",
 				"count": 1,
 				"summation": "+5<heart/> 1<clock/>"
 			},
 			{
 				"title": "Kort men gott",
-				"description": "Lagt kort ligger och kort ligg g�ller.",
+				"description": "Lagt kort ligger och kort ligg gäller.",
 				"count": 1,
 				"summation": "+1<sex/>"
 			},
 			{
 				"title": "Blink till Monopol",
-				"description": "Du vinner en sk�nhetst�vling. Inkassera kr 400.",
+				"description": "Du vinner en skönhetstävling. Inkassera kr 400.",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Relativt",
-				"description": "Du b�rjar umg�s med fula m�nniskor. Din attraktion �kar i f�rh�llande.",
+				"description": "Du börjar umgås med fula människor. Din attraktion ökar i förhållande.",
 				"count": 1,
 				"summation": "+1<heart/>"
 			},
@@ -245,18 +245,18 @@
 		"cards": [
 			{
 				"title": "Blue waffle",
-				"description": "Om du ligger med n�gon under de kommande 3 turerna f�rlorar du -4<heart/>",
+				"description": "Om du ligger med någon under de kommande 3 turerna förlorar du -4<heart/>",
 				"count": 1,
 				"turns": 3
 			},
 			{
-				"title": "Kvastr�ta",
-				"description": "Om du ligger med n�gon under de kommande 4 turerna f�rlorar du -5<heart/>",
+				"title": "Kvaströta",
+				"description": "Om du ligger med någon under de kommande 4 turerna förlorar du -5<heart/>",
 				"count": 1,
 				"turns": 4
 			},
 			{
-				"title": "Det h�r var nytt",
+				"title": "Det här var nytt",
 				"description": "Du vet inte om du gillade det du upplevde. Det var onekligen nytt. Ta en tur och funderar",
 				"count": 1,
 				"turns": 1,
@@ -275,71 +275,71 @@
 				"summation": "+3<heart/>"
 			},
 			{
-				"title": "L�g med X:et?",
-				"description": "Du var f�r full ig�r. Hur som helst kom hem med ditt X ist�llet f�r ditt t�nkta byte. Detta r�knas inte och det blir som om inget ligg skett",
+				"title": "Låg med X:et?",
+				"description": "Du var för full igår. Hur som helst kom hem med ditt X istället för ditt tänkta byte. Detta räknas inte och det blir som om inget ligg skett",
 				"count": 1,
 				"summation": "-1<sex/>"
 			},
 			{
-				"title": "B-k�ndis",
-				"description": "Nice. Ligget var en b-k�ndis.",
+				"title": "B-kändis",
+				"description": "Nice. Ligget var en b-kändis.",
 				"count": 1,
 				"summation": "+2<heart/>"
 			},
 			{
 				"title": "Trekant",
-				"description": "Typ b�sta kortet i hela spelet. Ditt ligg bj�d med en ok�nd fr�mling och det hela slutade i en trekant. R�knas som 2 ligg.",
+				"description": "Typ bästa kortet i hela spelet. Ditt ligg bjöd med en okänd främling och det hela slutade i en trekant. Räknas som 2 ligg.",
 				"count": 1,
 				"summation": "+1<sex/>"
 			},
 			{
-				"title": "Sugm�rke",
-				"description": "-4<heart/> under 2 turer. Men med tanken p� hur alla strular runt har du 1-4 p� en t�rning att \"smitta\" valfri motspelare",
+				"title": "Sugmärke",
+				"description": "-4<heart/> under 2 turer. Men med tanken på hur alla strular runt har du 1-4 på en tärning att \"smitta\" valfri motspelare",
 				"count": 1,
 				"turns": 2,
 				"summation": "-4<heart/>2<clock/>+</give>"
 			},
 			{
-				"title": "F�rh�llande",
-				"description": "Du lyckas befinna dig i ett f�rh�llande. Du kan inte g�ra n�gra liggf�rs�k de 3 n�rmaste turerna.",
+				"title": "Förhållande",
+				"description": "Du lyckas befinna dig i ett förhållande. Du kan inte göra några liggförsök de 3 närmaste turerna.",
 				"count": 1,
 				"turns": 3,
 				"summation": "<cross/><sex/>3<clock/>"
 			},
 			{
-				"title": "F�r�lskelse",
-				"description": "Du k�nner n�tt som inte �r bra f�r detta spel. Du kan ej g�ra n�gra liggf�rs�k tills du slagit 1-2 p� en t�rning i b�rjan av din tur.",
+				"title": "Förälskelse",
+				"description": "Du känner nått som inte är bra för detta spel. Du kan ej göra några liggförsök tills du slagit 1-2 på en tärning i början av din tur.",
 				"count": 1,
 				"summation": "<cross/><sex/>"
 			},
 			{
 				"title": "Mello",
-				"description": "Ni l�g ig�ng Melodifestivalen. Mello varar i 2 turer och alla som �r bi eller homo �r helt utslagna och st�r �ver tv� slag.",
+				"description": "Ni låg igång Melodifestivalen. Mello varar i 2 turer och alla som är bi eller homo är helt utslagna och står över två slag.",
 				"count": 1,
 				"turns": 2
 			},
 			{
-				"title": "Kan inte g� ifr�n",
-				"description": "Hens f�r�ldrar kom f�rbi efter. Det �r pinsamt f�r alla men ingen kan g� d�rifr�n. St� �ver en tur.",
+				"title": "Kan inte gå ifrån",
+				"description": "Hens föräldrar kom förbi efter. Det är pinsamt för alla men ingen kan gå därifrån. Stå över en tur.",
 				"count": 1,
 				"turns": 1,
 				"summation": "1<clock/>"
 			},
 			{
 				"title": "Vilt gick det till",
-				"description": "Tyv�rr har du f�tt skavs�r och kan inte g�ra n�gra liggf�rs�k de 2 kommande omg�ngarna.",
+				"description": "Tyvärr har du fått skavsår och kan inte göra några liggförsök de 2 kommande omgångarna.",
 				"count": 1,
 				"turns": 2,
 				"summation": "<cross/><sex/>2<clock/>"
 			},
 			{
 				"title": "Katastrof",
-				"description": "Du var s� d�lig att ditt ligg blev asexuell och kommer inte ligga med n�gra fler f�r resten av spelet.",
+				"description": "Du var så dålig att ditt ligg blev asexuell och kommer inte ligga med några fler för resten av spelet.",
 				"count": 1
 			},
 			{
-				"title": "Succ�",
-				"description": "Du var grym som attan och ryktes sprids. Du f�r l�gga till en ny person till staden fr�n de icke anv�nda personkorten",
+				"title": "Succé",
+				"description": "Du var grym som attan och ryktes sprids. Du får lägga till en ny person till staden från de icke använda personkorten",
 				"count": 1
 			},
 			{
@@ -365,7 +365,7 @@
 	{
 		"name": "Person",
 		"backImages": ["Images/bird1.svg", "Images/bird2.svg", "Images/bird5.svg"],
-		"template": ["K�n", "<flake/> f�r killar", "<flake/> f�r tjejer"],
+		"template": ["Kön", "<flake/> för killar", "<flake/> för tjejer"],
 		"countText": "Ligg per spel:",
 		"cards": [
 			{
@@ -491,14 +491,14 @@
 		]
 	},
 	{
-		"name": "Liggmark�r",
+		"name": "Liggmarkör",
 		"frontImage": "Images/bird9.svg",
 		"backImages": ["Images/bird9.svg"],
 		"cards": [
 			{
-				"title": "Liggmark�r",
-				"description": "Mark�r som indikerar ett ligg",
-				"count": 12
+				"title": "Liggmarkör",
+				"description": "Markör som indikerar ett ligg",
+				"count": 8
 			}
 		]
 	}

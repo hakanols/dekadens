@@ -166,7 +166,7 @@ def debug(text):
     return ''
 
 def read_json_file():
-    with open('data.json') as json_file:  
+    with open('data.json','r',encoding='utf8') as json_file:
         data = json.load(json_file)
 
         environment = Environment()

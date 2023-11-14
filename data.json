@@ -98,7 +98,7 @@
 			},
 			{
 				"title": "Symbios",
-				"description": "Du får valet med att ligga med någon motspelare. Glöm ej samtycke. Kom ihåg att bara första ligget räknas.",
+				"description": "Du får valet med att ligga med någon motspelare. Glöm ej samtycke och att bara första ligget räknas. Dra inget utfallskort.",
 				"count": 1
 			},
 			{
@@ -167,7 +167,7 @@
 			},
 			{
 				"title": "Solsemester",
-				"description": "Du kommer hem solbränd och värdsvan från en semester.",
+				"description": "Du kommer hem solbränd och världsvan från en semester.",
 				"count": 1,
 				"summation": "+3<heart/>"
 			},
@@ -232,9 +232,45 @@
 				"summation": "+1<heart/>"
 			},
 			{
+				"title": "Hopplös optimist",
+				"description": "Skam den som ger sig. Rulla om ett misslyckat liggförsök",
+				"count": 1,
+				"summation": ""
+			},
+			{
+				"title": "Opåverkad",
+				"description": "Du bryr dig inte om konsekvenser. Spela för att skippa ett utfallskort",
+				"count": 1,
+				"summation": ""
+			},
+			{
+				"title": "Tjuvkika",
+				"description": "Titta på de 5 översta utfallskorten och ändra ordningen på dessa om du vill",
+				"count": 1,
+				"summation": ""
+			},
+			{
+				"title": "Tvingad vingman",
+				"description": "Används någon annans attraktionspoäng under en tur",
+				"count": 1,
+				"summation": ""
+			},
+			{
+				"title": "Cock block",
+				"description": "Tvinga någon annan att använda dina attraktionspoäng istället för sina egna under 2 turer",
+				"count": 1,
+				"summation": ""
+			},
+			{
+				"title": "Blue Balls",
+				"description": "Ge någon som misslyckats ligg senaste rundan blue balls, Denna måste stå över nästa kast",
+				"count": 1,
+				"summation": ""
+			},
+			{
 				"title": "",
 				"description": "",
-				"count": 2
+				"count": 4
 			}
 		]
 	},
@@ -245,13 +281,13 @@
 		"cards": [
 			{
 				"title": "Blue waffle",
-				"description": "Om du ligger med någon under de kommande 3 turerna förlorar du -4<heart/>",
+				"description": "Du har fått en könssjukdom. Om du ligger med någon de kommande 3 turerna förlorar du -4<heart/>",
 				"count": 1,
 				"turns": 3
 			},
 			{
 				"title": "Kvaströta",
-				"description": "Om du ligger med någon under de kommande 4 turerna förlorar du -5<heart/>",
+				"description": "Du har fått en könssjukdom. Om du ligger med någon de kommande 4 turerna förlorar du -5<heart/>",
 				"count": 1,
 				"turns": 4
 			},

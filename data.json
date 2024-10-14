@@ -268,9 +268,15 @@
 				"summation": ""
 			},
 			{
+				"title": "Försvar",
+				"description": "Sparka inte på den som redan ligger. Spelas även om det inte är din tur. Kontrar en attack mot dig.",
+				"count": 1,
+				"summation": ""
+			},
+			{
 				"title": "",
 				"description": "",
-				"count": 4
+				"count": 3
 			}
 		]
 	},

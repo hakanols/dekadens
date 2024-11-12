@@ -152,7 +152,7 @@ backTemplate = """
 """
 
 options = {
-    'enable-local-file-access': None,
+    'enable-local-file-access': "",
     'margin-top': '15px',
     'margin-right': '15px',
     'margin-bottom': '15px',
